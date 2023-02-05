@@ -2,28 +2,51 @@
 
 
 .portfolio {
-    background-color: white;
+    background-color: #f1efef;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     h1{
         font-size: 50px;
+        @include mobile{
+            font-size: 30px;
+        }
+        margin-bottom: 10px;
+        overflow-y:hidden
+    }
+    
+    p{
+        font-size: 15px;
+        overflow-y: hidden;
+        @include mobile{
+            font-size: 14px;
+            height: 0px;
+        }
+        
     }
 
     ul{
-        margin: 10px;
+        margin: 2vw;
         padding:0;
         list-style: none;
         display: flex;
 
+        @include mobile{
+            flex-wrap: wrap;
+        }
+
         li{
-            font-size: 14px;
-            margin-right: 50px;
+            font-size: 18px;
+            margin-right: 2vw;
             padding: 7px;
             border-radius: 10px;
             cursor: pointer;
+            overflow-y: hidden;
 
+            @include mobile{
+                font-size: 14px;
+            }
 
             &.active{
                 background-color: $mainColor;
@@ -34,42 +57,55 @@
     }
 
     .container {
-        width: 70%;
+        width: 80%;
+        height: 80%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         flex: wrap;
 
         .item{
-            width: 220px;
-            height: 150px;
+            background-color: white;
+
+            width: 100%;
+            height: 100px;
             border-radius: 20px;
             border: 1px solid rgb(240, 239, 239);
             margin: 10px 20px;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
             color: white;
             position: relative;
             transition: all .5s ease;
             cursor: pointer;
 
             h3 {
-                position: absolute;
+                // position: absolute;
+                // top: 50%;
                 font-size: 20px;
+                color: blue;
+                z-index: 2;
+                flex: 1;
             }
 
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: 1;
-            }
+            // img{
+            //     width: 100%;
+            //     height: 100%;
+            //     object-fit: cover;
+            //     z-index: 1;
+            // }
+
+            
 
             &:hover {
                 background-color: $mainColor;
-                img {
-                  opacity: 0.2;
-                  z-index: 0;
+                height: 1000px;
+                
+                h3{
+                    color: white;
+                    top: 5%;
+                    transition: all .5s ease;
                 }
             }
 

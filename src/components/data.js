@@ -1,218 +1,121 @@
 export const featuredPortfolio = [
     {
-      id: 1,
-      title: "Social Media App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 2,
-      title: "Rampa UI Design",
-      img:
-        "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
-    },
-    {
       id: 3,
       title: "Switchpoint Modelling",
       img:
         "assets/bayes1.PNG",
     },
-    {
-      id: 4,
-      title: "Relax Mobile App",
-      img:
-        "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 5,
-      title: "Hero Web Design",
-      img:
-        "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 6,
-      title: "Banking App",
-      img:
-        "https://cdn.dribbble.com/users/3307260/screenshots/15468444/media/447b4501f7a145b05e11c70199a9c417.jpg?compress=1&resize=1200x900",
-    },
   ];
   
-  export const webPortfolio = [
-    {
-      id: 1,
-      title: "Web Social Media App",
-      img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 2,
-      title: "Web Rampa UI Design",
-      img: "https://cdn.dribbble.com/users/3967258/screenshots/15463803/media/4fddb9a2caf3b3bd634060f706a91e73.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 3,
-      title: "Web E-commerce Design",
-      img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 4,
-      title: "Web Relax App",
-      img: "https://cdn.dribbble.com/users/2264844/screenshots/15463998/media/d85e92a332c41094f68e1f716884f7ce.jpg?compress=1&resize=1200x900",
-    },
-    {
-      id: 5,
-      title: "Web Design",
-      img: "https://cdn.dribbble.com/users/387658/screenshots/15458608/media/e92ec1dd33dd1170ae3dc9c5272f2693.jpg?compress=1&resize=1200x900",
-    },
-    {
-      id: 6,
-      title: "Web Banking App",
-      img: "https://cdn.dribbble.com/users/6384483/screenshots/15468426/media/ce9479fa1f8dba3a4a49840d76e55e31.png?compress=1&resize=1200x900",
-    },
-  ];
-  
-  export const mobilePortfolio = [
-    {
-      id: 1,
-      title: "Mobile Social Media App",
-      img:
-        "https://cdn.dribbble.com/users/2597268/screenshots/15468893/media/44313553d73ba41580f1df69749bba28.jpg?compress=1&resize=1200x900",
-    },
-    {
-      id: 2,
-      title: "Mobile Rampa UI Design",
-      img:
-        "https://cdn.dribbble.com/users/5920881/screenshots/15463142/media/b5a460223798bd85d835710806e2f3dd.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 3,
-      title: "Mobile E-commerce Design",
-      img:
-        "https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 4,
-      title: "Mobile Relax App",
-      img:
-        "https://cdn.dribbble.com/users/2083704/screenshots/15468619/media/cd958306c7a772449e1ac23bd65ce506.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 5,
-      title: "Mobile Hero Design",
-      img:
-        "https://cdn.dribbble.com/users/26642/screenshots/15462545/media/1a202ef5c8338b6f78634e6edc1ba350.png?compress=1&resize=1200x900",
-    },
-    {
-      id: 6,
-      title: "Mobile Banking App",
-      img:
-        "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
-    },
-  ];
-  
-  export const designPortfolio = [
-    {
-      id: 1,
-      title: "Design Social Media App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 2,
-      title: "Design Rampa UI Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 3,
-      title: "Design E-commerce Web Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 4,
-      title: "Design Relax Mobile App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 5,
-      title: "Design Keser Web Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 6,
-      title: "Design Banking App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-  ];
-  
-  export const contentPortfolio = [
-    {
-      id: 1,
-      title: "Content Social Media App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 2,
-      title: "Content Rampa UI Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 3,
-      title: "Content E-commerce Web Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 4,
-      title: "Content Relax Mobile App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 5,
-      title: "Content Keser Web Design",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-    {
-      id: 6,
-      title: "Content Banking App",
-      img:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    },
-  ];
+export const customerAnalyticsPortfolio = [
+  {
+    id: 1,
+    title: "Churn Modelling",
+    desc: "Retaining customers in a business may be of equal importance as acquiring new ones. Predictive Analytics can help your business predict churn on a business level (i.e. how many customers will churn in X days).",
+    inp: "Data about your customer such as their transaction history or demographic data",
+    img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+  },
+  {
+    id: 2,
+    title: "Customer Lifetime Modelling",
+    desc: "What is the cummulative discounted cashflow you can expect from a customer?",
+    inp: "Data about your customer such as their transaction history or demographic data",
+    img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+  },
+  {
+    id: 3,
+    title: "Customer Segmentation",
+    desc: "Partition your customers into discrete sets to create"
+  },
+  {
+    id: 3,
+    title: "AI-based Voice of Customer Analysis",
+    desc: "Leverage the power of large AI models to extract the sentiment that your customers have towards your company or specific products of it."
+  }
+];
 
-  export const WorksData = [
-    {
-      id: "1",
-      icon: "./assets/hanzi-character.png",
-      title: "Hanzi Graph",
-      desc:
-        "A Chinese dictionary that visualizes characters as nodes in a Graph and edges as words",
-      img:
-        "assets/hanzi-graph.png",
-    },
-    {
-      id: "2",
-      icon: "./assets/globe.png",
-      title: "Mobile Application",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-    },
-    {
-      id: "3",
-      icon: "./assets/writing.png",
-      title: "Branding",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    },
-  ];
+export const reinforcementLearningPortfolio = [
+  {
+    id: 1,
+    title: "RF-based Combinatorial Optimization",
+    desc: "Reinforcement Learning based algorithms can be a solution to many common combinatorial optimization problems such as TSP, 3-Sat.",
+    inp: "Business Process that needs to be modelled."
+  }
+]
+
+
+export const operationsPortfolio = [
+  {
+    id: 1,
+    title: "Operations",
+    desc: "Reinforcement Learning based algorithms can be a solution to many common combinatorial optimization problems such as TSP, 3-Sat.",
+    inp: "Business Process that needs to be modelled."
+  },
+  {
+    id: 1,
+    title: "Demand Forecasting",
+    desc: "What will demand for a specific product look like in the future?",
+    inp: "Business Process that needs to be modelled."
+  },
+]
+
+
+export const marketingPortfolio = [
+  {
+    id:"1",
+    title:"Media Mix Modelling",
+    desc:"How should you optimally allocated resources to different media channels to maximize traffic?",
+    icon:"./assets/writing.png"
+  },
+  {
+    id:"2",
+    icon:"./assets/writing.png",
+    title:"A/B Testing",
+    desc:"How can we compare to populations",
+  },
+  {
+    id:"3",
+    icon:"./assets/writing.png",
+    title:"Media Mix Modelling",
+    desc:"How should you optimally allocated resources to different media channels to maximize traffic?",
+  },
+  {
+    id:"4",
+    icon:"./assets/writing.png",
+    title:"Media Mix Modelling",
+    desc:"How should you optimally allocated resources to different media channels to maximize traffic?",
+  }
+]
+
+
+
+export const WorksData = [
+  {
+    id: "1",
+    icon: "./assets/hanzi-character.png",
+    title: "Hanzi Graph",
+    desc:
+      "A Chinese dictionary that visualizes characters as nodes in a Graph and edges as words",
+    img:
+      "assets/hanzi-graph.png",
+  },
+  {
+    id: "2",
+    icon: "./assets/globe.png",
+    title: "Bayesian Multiarm-Bandits for optimal Bid pricing",
+    desc:
+      "Businesses need to optimally price their bids to receive orders by clients while at the same time not underselling their services. This happens in the context of incomplete information.",
+    img:
+      "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+  },
+  {
+    id: "3",
+    icon: "./assets/writing.png",
+    title: "Supply Chain Optimization via Reinforcement Learning",
+    desc:
+      "With today's Supply Chains growing in complexity, designing them becomes an increasingly hard task. See how we can help not only point out current weaknesses in the supply chain but also provide insights into ways of improving a firm's supply chain structure",
+    img:
+      "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+  },
+];
+

@@ -3,10 +3,10 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
   featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  customerAnalyticsPortfolio,
+  marketingPortfolio,
+  reinforcementLearningPortfolio,
+  operationsPortfolio
 } from "../data";
 
 export default function Portfolio() {
@@ -18,21 +18,25 @@ export default function Portfolio() {
       title: "Featured",
     },
     {
-      id: "dl",
-      title: "Deep Learning",
+      id: "marketing",
+      title: "Marketing Analytics"
+    },
+    {
+      id: "ca",
+      title: "Customer Analytics",
     },
     {
       id: "rf",
       title: "Reinforcement Learning",
     },
     {
-      id: "db",
-      title: "Dashboards",
+      id: "operations",
+      title: "Operations",
     },
-    {
-      id: "content",
-      title: "Content",
-    },
+    // {
+    //   id: "db",
+    //   title: "Dashboards",
+    // },
   ];
 
   useEffect(() => {
@@ -40,17 +44,17 @@ export default function Portfolio() {
       case "featured":
         setData(featuredPortfolio);
         break;
-      case "dl":
-        setData(webPortfolio);
+      case "marketing":
+        setData(marketingPortfolio);
+        break;
+      case "ca":
+        setData(customerAnalyticsPortfolio);
         break;
       case "rf":
-        setData(mobilePortfolio);
+        setData(reinforcementLearningPortfolio)
         break;
-      case "db":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
+      case "operations":
+        setData(operationsPortfolio)
         break;
       default:
         setData(featuredPortfolio);
@@ -59,7 +63,11 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
+      <h1>Business Problems</h1>
+      <p>
+        You have data but don't know what could be done with it?
+        Get inspired by the following scenarios and see how they fit your specific business context
+      </p>
       <ul>
         {list.map((item) => (
           <PortfolioList
@@ -73,13 +81,17 @@ export default function Portfolio() {
       <div className="container">
         {data.map((d) => (
           <div className="item">
-            <img
-              src={d.img}
-              alt=""
-            />
+            
             <h3>{d.title}</h3>
+            <p>{d.desc}</p>
+
+            
           </div>
         ))}
+      </div>
+      <div>
+        <p>Like This website? <a href="#contact">Get One. </a></p>
+        
       </div>
     </div>
   );

@@ -1,10 +1,35 @@
-import "./contact.scss"
-
-
+import "./contact.scss";
+import { useState } from "react";
 
 function Contact() {
+
+  const [message, setMessage] = useState(false)
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+    setMessage(true)
+  }
   return (
-    <div id="contact" className='contact'>Contact</div>
+    <div id="contact" className='contact'>
+      {/* Contact */}
+      <div className="top">
+        Hello
+        {/* <img src="./assets/brownian_covariance.gif"></img> */}
+      </div>
+      <div className="right">
+        <h2>Get in touch.</h2>
+        <form onSubmit={handleSubmit}>
+          <input type="text" placeholder="Email"></input>
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Submit</button>
+          {message && <span>Thanks, we will get back to you asap</span>}
+        </form>
+      </div>
+      <div className="impressum">Impressum</div>
+    
+    </div>
+
+    
   )
 }
 

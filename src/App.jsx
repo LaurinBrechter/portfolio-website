@@ -9,9 +9,6 @@ import "./app.scss"
 import Menu from "./components/menu/Menu.jsx";
 
 
-
-
-
 function App() {
 
   const [menuOpen, setMenuOpen] = useState(false)
@@ -23,10 +20,10 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
-        <Contact/>
         <Portfolio/>
         <Works/>
         <Testimonials/>
+        <Contact/>
       </div>
     </div>
   );
