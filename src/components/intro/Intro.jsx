@@ -23,15 +23,17 @@ export default function Intro() {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hi There, I'm</h2>
-          <h1>Laurin Brechter</h1>
+          <h2>Hi There, We are</h2>
+          <h1>VertexAnalytics</h1>
           <h3>
             Freelance <span ref={textRef}></span>
           </h3>
+          <p>Discover high ROI Machine Learning Projects for your company</p>
         </div>
         <a href="#portfolio">
           <img src="assets/down.png" alt="" />
         </a>
+        
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
 .works {
-    background-color: #f1efef;
+    // background-color: #f1efef;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(61,78,80,1) 50%);
     display: flex;
     align-items: center;
     justify-content: center;

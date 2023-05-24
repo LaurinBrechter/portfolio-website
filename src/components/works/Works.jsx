@@ -1,12 +1,13 @@
 import "./works.scss"
 import { WorksData } from "../data"
 import { useState } from "react"
+import Plot from 'react-plotly.js';
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0)
 
   const handleClick = (way)=>{
-    way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1:2) : 
+    way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1:3) : 
     setCurrentSlide(currentSlide < WorksData.length -1 ? currentSlide + 1: 0)
   }
 
@@ -14,8 +15,6 @@ export default function Works() {
     <div id="works" className='works'>
       <div className="slider" style={{transform:`translateX(-${currentSlide*100}vw)`}}>
         {WorksData.map(d=>(
-
-        
         <div className="container">
           <div className="item">
             <div className="left">
@@ -30,6 +29,19 @@ export default function Works() {
               </div>
             </div>
             <div className="right">
+            <Plot
+              data={[
+                {
+                  x: [1, 2, 3],
+                  y: [2, 6, 3],
+                  type: 'scatter',
+                  mode: 'lines+markers',
+                  marker: {color: 'red'},
+                },
+                {type: 'bar', x: [1, 2, 3], y: [2, 5, 3]},
+              ]}
+              layout={ {width: 320, height: 240, title: 'A Fancy Plot'} }
+            />
               <img src={d.img} alt="" />
             </div>
           </div>

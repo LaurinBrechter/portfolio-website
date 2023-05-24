@@ -34,6 +34,33 @@ export const customerAnalyticsPortfolio = [
   }
 ];
 
+
+export const documentIntelligencePortfolio = [
+  {
+    id: 1,
+    title: "Document Summarization",
+    desc: "Retaining customers in a business may be of equal importance as acquiring new ones. Predictive Analytics can help your business predict churn on a business level (i.e. how many customers will churn in X days).",
+    inp: "Data about your customer such as their transaction history or demographic data",
+    img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+  },
+  {
+    id: 2,
+    title: "Optical Character Recognition (OCR",
+    desc: "Retaining customers in a business may be of equal importance as acquiring new ones. Predictive Analytics can help your business predict churn on a business level (i.e. how many customers will churn in X days).",
+    inp: "Data about your customer such as their transaction history or demographic data",
+    img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+  },
+  {
+    id: 3,
+    title: "Document Question Answering",
+    desc: "Retaining customers in a business may be of equal importance as acquiring new ones. Predictive Analytics can help your business predict churn on a business level (i.e. how many customers will churn in X days).",
+    inp: "Data about your customer such as their transaction history or demographic data",
+    img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+  }
+];
+
+
+
 export const reinforcementLearningPortfolio = [
   {
     id: 1,
@@ -44,6 +71,17 @@ export const reinforcementLearningPortfolio = [
 ]
 
 
+export const scientificPortfolio = [
+  {
+    id: 1,
+    title: "Paper to Code",
+    desc: "You have a scientic publications whose methods or models need to be implemented in code?",
+    inp: "Scientific publication and how you need it to be implemented"
+  }
+]
+
+
+
 export const operationsPortfolio = [
   {
     id: 1,
@@ -52,11 +90,16 @@ export const operationsPortfolio = [
     inp: "Business Process that needs to be modelled."
   },
   {
-    id: 1,
+    id: 2,
     title: "Demand Forecasting",
     desc: "What will demand for a specific product look like in the future?",
     inp: "Business Process that needs to be modelled."
   },
+  {
+    id: 3,
+    title: "Inventory Optimization",
+    desc: "How does a company need to optimally source items to "
+  }
 ]
 
 
@@ -64,13 +107,13 @@ export const marketingPortfolio = [
   {
     id:"1",
     title:"Media Mix Modelling",
-    desc:"How should you optimally allocated resources to different media channels to maximize traffic?",
+    desc:"How should you optimally allocate resources to different media channels to maximize traffic?",
     icon:"./assets/writing.png"
   },
   {
     id:"2",
     icon:"./assets/writing.png",
-    title:"A/B Testing",
+    title:"A / B Testing",
     desc:"How can we compare to populations",
   },
   {
@@ -104,7 +147,9 @@ export const WorksData = [
     icon: "./assets/globe.png",
     title: "Bayesian Multiarm-Bandits for optimal Bid pricing",
     desc:
-      "Businesses need to optimally price their bids to receive orders by clients while at the same time not underselling their services. This happens in the context of incomplete information.",
+      `Businesses need to optimally price their bids to receive 
+      orders by clients while at the same time not underselling 
+      their services. This happens in the context of incomplete information.`,
     img:
       "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
   },
@@ -113,9 +158,28 @@ export const WorksData = [
     icon: "./assets/writing.png",
     title: "Supply Chain Optimization via Reinforcement Learning",
     desc:
-      "With today's Supply Chains growing in complexity, designing them becomes an increasingly hard task. See how we can help not only point out current weaknesses in the supply chain but also provide insights into ways of improving a firm's supply chain structure",
+      `With today's Supply Chains growing in complexity, designing them 
+      becomes an increasingly hard task. See how we can help not only 
+      point out current weaknesses in the supply chain but also provide 
+      insights into ways of improving a firm's supply chain structure`,
     img:
       "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+  },
+  {
+    id: "4",
+    icon: "./assets/writing.png",
+    title: "Reinforcement Learning Based Online Bipartite Matching",
+    desc:
+      `Given 2 distincs sets of entities, what is the 
+      optimal matching between them? We could for example 
+      imagine one set being ads, the other users. 
+      Or one set is workers the other is Tasks. 
+      We have to then find the optimal match. That is,
+      what ads do we show a given user? Which worker does
+      what task? 
+      Often business are facing the task of optimally allocting one set of entities to the other.`,
+    img:
+      "./assets/bipartite_graph.png",
   },
 ];
 

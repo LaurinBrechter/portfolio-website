@@ -6,8 +6,12 @@ import {
   customerAnalyticsPortfolio,
   marketingPortfolio,
   reinforcementLearningPortfolio,
-  operationsPortfolio
+  operationsPortfolio,
+  scientificPortfolio,
+  documentIntelligencePortfolio
 } from "../data";
+
+// import AnalyticsIcon from '@mui/icons-material/Analytics';
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -33,6 +37,14 @@ export default function Portfolio() {
       id: "operations",
       title: "Operations",
     },
+    {
+      id: "scientific",
+      title: "Scientific"
+    },
+    {
+      id:"document",
+      title:"Document Intelligence"
+    }
     // {
     //   id: "db",
     //   title: "Dashboards",
@@ -56,6 +68,12 @@ export default function Portfolio() {
       case "operations":
         setData(operationsPortfolio)
         break;
+      case "scientific":
+        setData(scientificPortfolio)
+        break;
+      case "document":
+        setData(documentIntelligencePortfolio)
+        break;
       default:
         setData(featuredPortfolio);
     }
@@ -63,11 +81,13 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Business Problems</h1>
+      <h1>Business Solutions</h1>
       <p>
         You have data but don't know what could be done with it?
-        Get inspired by the following scenarios and see how they fit your specific business context
+        Get inspired by the following scenarios and see how they fit your specific business context.
       </p>
+      
+      {/*  */}
       <ul>
         {list.map((item) => (
           <PortfolioList
@@ -82,7 +102,7 @@ export default function Portfolio() {
         {data.map((d) => (
           <div className="item">
             
-            <h3>{d.title}</h3>
+            <h3>{d.title} </h3>
             <p>{d.desc}</p>
 
             
