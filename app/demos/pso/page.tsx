@@ -1,8 +1,5 @@
 "use client";
 
-import Plot from 'react-plotly.js';
-
-
 export default function PSO() {
 
   // https://en.wikipedia.org/wiki/Test_functions_for_optimization
@@ -26,17 +23,18 @@ export default function PSO() {
   ]
 
   return (
-    <Plot
-      data={[
-        {
-          z: z,
-          type: 'surface',
-          // mode: 'lines+markers',
-          // marker: { color: 'red' },
-        },
-        // { type: 'bar', x: [1, 2, 3], y: [2, 5, 3] },
-      ]}
-      layout={{ width: 500, height: 500, title: 'A Fancy Plot' }}
-    />
+    <div>Page</div>
+    // <Plot
+    //   data={[
+    //     {
+    //       z: z,
+    //       type: 'surface',
+    //       // mode: 'lines+markers',
+    //       // marker: { color: 'red' },
+    //     },
+    //     // { type: 'bar', x: [1, 2, 3], y: [2, 5, 3] },
+    //   ]}
+    //   layout={{ width: 500, height: 500, title: 'A Fancy Plot' }}
+    // />
   );
 }

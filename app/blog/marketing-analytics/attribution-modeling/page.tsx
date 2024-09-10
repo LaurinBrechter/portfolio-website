@@ -52,7 +52,7 @@ const data = [
   },
 ];
 
-export const description = "A bar chart";
+// export const description = "A bar chart";
 
 const chartData = [
   { month: "January", desktop: 186 },
