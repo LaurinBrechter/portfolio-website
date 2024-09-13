@@ -1,22 +1,25 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { BarChart, PieChart, LineChart, Database } from "lucide-react"
+import Lang from "@/lang/lang"
 
-export default function Home() {
+
+export default function Home({ params }: { params: { lang: string } }) {
+
+  const locale = params.lang ? params.lang : 'en'
+  const localTranslations = Lang[locale]
+
   return (
-    // <div className='flex justify-center items-center h-[93%]'>
-    //   <div className='text-3xl font-bold'>Vertex Analytics</div>
-    // </div>
     <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Unlock the Power of Your Data
+                  {localTranslations.home.title}
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Expert data analysis and scientific insights to drive your business forward. Transform raw data into actionable strategies.
+                  {localTranslations.home.subtitle}
                 </p>
               </div>
               <div className="space-x-4">
@@ -84,8 +87,6 @@ export default function Home() {
                   <Input placeholder="Your Email" type="email" />
                   <Button type="submit">Send Message</Button>
                 </form>
-                
-                
               </div>
             </div>
           </div>

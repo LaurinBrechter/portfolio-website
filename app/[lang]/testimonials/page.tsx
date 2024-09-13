@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Link from 'next/link'
+// import { useRouter } from 'next/router'
 
 interface TestimonialProps {
   image: string
@@ -51,6 +52,11 @@ function Testimonial({ image, name, company, title, testimonial, relatedPosts }:
 
 
 export default function TestimonialsSection() {
+
+  // const router = useRouter()
+  // console.log(router.locale)
+
+
   const testimonials: TestimonialProps[] = [
     {
       image: "/placeholder.svg?height=100&width=100",
