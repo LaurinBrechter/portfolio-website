@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Nav from './components/Nav'
+import CalendlyScheduling from './components/CalendlyScheduling'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,9 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='h-screen w-screen'>
+        <div id='root' className="flex flex-col min-h-[100dvh]">
           <Nav />
-          <main className='h-[93%] p-3'>{children}</main>
+          <main className="flex-1">{children}</main>
+          <CalendlyScheduling />
         </div>
       </body>
     </html>
