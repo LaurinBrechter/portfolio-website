@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Link from 'next/link'
+import Lang from '@/src/lang/lang'
 // import { useRouter } from 'next/router'
 
 interface TestimonialProps {
@@ -51,10 +52,10 @@ function Testimonial({ image, name, company, title, testimonial, relatedPosts }:
 }
 
 
-export default function TestimonialsSection() {
+export default function TestimonialsSection({ params }: { params: { lang: string } }) {
 
-  // const router = useRouter()
-  // console.log(router.locale)
+  const locale = params.lang ? params.lang : 'en'
+  const localTranslations = Lang[locale]
 
 
   const testimonials: TestimonialProps[] = [
@@ -88,10 +89,10 @@ export default function TestimonialsSection() {
   ]
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800 h-[93vh]">
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
-          What Clients Say
+          {localTranslations.testimonials.title}
         </h2>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (

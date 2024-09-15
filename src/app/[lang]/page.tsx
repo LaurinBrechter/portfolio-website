@@ -55,9 +55,9 @@ export default function Home({ params }: { params: { lang: string } }) {
           <div className="container px-4 md:px-6">
             <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">About Me</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">{localTranslations.home.about.title}</h2>
                 <p className="text-gray-500 dark:text-gray-400">
-                  As a seasoned data analyst and scientist, I bring years of experience in transforming complex data into clear, actionable insights. My expertise spans various industries, allowing me to tackle diverse challenges and deliver tailored solutions.
+                  {localTranslations.home.about.content}
                 </p>
               </div>
               <div className="flex justify-center">
