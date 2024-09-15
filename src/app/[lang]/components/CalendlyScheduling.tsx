@@ -11,8 +11,6 @@ export default function CalendlyScheduling() {
         setRootElement(document.getElementById("root"));
     }, []);
     
-    console.log(rootElement);
-
     return (
         rootElement &&
         <PopupWidget

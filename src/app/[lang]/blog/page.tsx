@@ -4,7 +4,7 @@ import path from "path";
 
 const Page = () => {
   
-  const blog_json = JSON.parse(fs.readFileSync(process.cwd() + '/app/[lang]/blog/blogs.json', 'utf8'));
+  const blog_json = JSON.parse(fs.readFileSync(process.cwd() + '/src/app/[lang]/blog/blogs.json', 'utf8'));
   
   return (
     <Blog blog_data={blog_json} />

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { BarChart, PieChart, LineChart, Database } from "lucide-react"
-import Lang from "@/lang/lang"
+import Lang from "@/src/lang/lang"
 
 
 export default function Home({ params }: { params: { lang: string } }) {
