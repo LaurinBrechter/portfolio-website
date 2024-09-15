@@ -54,7 +54,7 @@ function get_attribution_data(channels: string[], attributionType: string) {
           fill: channel.fill,
         };
       });
-    case "linear":
+    default:
       return initChartData.map((channel, index) => {
         return {
           touchpoint: channel.touchpoint,
