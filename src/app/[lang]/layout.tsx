@@ -34,8 +34,8 @@ export default async function LocaleLayout({
             <Footer />
           </NextIntlClientProvider>
           <CalendlyScheduling />
-          <SpeedInsights />
         </div>
+        <SpeedInsights />
       </body>
     </html>
   );

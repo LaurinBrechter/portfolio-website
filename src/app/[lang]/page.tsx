@@ -76,7 +76,6 @@ export default function Home({ params }: { params: { lang: string } }) {
                 <p className="text-gray-500 dark:text-gray-400">
                   {localTranslations.home.about.content}
                 </p>
-                
               </div>
               <div className="flex justify-center">
                 <img
