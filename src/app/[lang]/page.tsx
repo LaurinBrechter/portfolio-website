@@ -23,9 +23,9 @@ export default function Home({ params }: { params: { lang: string } }) {
   ]
 
   const links = [
-    undefined,
-    undefined,
-    undefined,
+    "/blog/chatbots/omd-bot",
+    "/blog/chatbots/omd-bot",
+    "/blog/chatbots/omd-bot",
     "/blog/chatbots/omd-bot"
   ]
 

@@ -6,6 +6,7 @@ import CalendlyScheduling from "./components/CalendlyScheduling";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import Footer from "./components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export default async function LocaleLayout({
             <Footer />
           </NextIntlClientProvider>
           <CalendlyScheduling />
+          <SpeedInsights />
         </div>
       </body>
     </html>
