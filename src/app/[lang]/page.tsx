@@ -14,6 +14,21 @@ export default function Home({ params }: { params: { lang: string } }) {
   const locale = params.lang ? params.lang : 'en'
   const localTranslations = Lang[locale]
 
+
+  const icons = [
+    <BarChart className="h-12 w-12 mb-4 text-primary" />,
+    <PieChart className="h-12 w-12 mb-4 text-primary" />,
+    <LineChart className="h-12 w-12 mb-4 text-primary" />,
+    <Bot className="h-12 w-12 mb-4 text-primary" />
+  ]
+
+  const links = [
+    undefined,
+    undefined,
+    undefined,
+    "/blog/chatbots/omd-bot"
+  ]
+
   return (
     <>
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 h-[93vh]" id="welcome-container">
@@ -37,29 +52,19 @@ export default function Home({ params }: { params: { lang: string } }) {
         </section>
         <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8"> 
-              <div className="flex flex-col items-center text-center">
-                <BarChart className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-bold mb-2">Data Analysis</h3>
-                <p className="text-gray-500 dark:text-gray-400">Comprehensive analysis of your data to uncover trends and insights.</p>
-              </div>
-              <div className="flex flex-col items-center text-center">
-                <PieChart className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-bold mb-2">Data Visualization</h3>
-                <p className="text-gray-500 dark:text-gray-400">Create compelling visual representations of your data for easy understanding.</p>
-              </div>
-              <div className="flex flex-col items-center text-center">
-                <LineChart className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-bold mb-2">Predictive Modeling</h3>
-                <p className="text-gray-500 dark:text-gray-400">Develop models to forecast trends and make data-driven decisions.</p>
-              </div>
-              <div className="flex flex-col items-center text-center relative">
-                <Bot className="h-12 w-12 mb-4 text-primary" />
-                <h3 className="text-xl font-bold mb-2">Intelligent Chatbots</h3>
-                <p className="text-gray-500 dark:text-gray-400">Develop chatbots that can interact with your customers and provide support.</p>
-                <Link href="/blog/chatbots/omd-bot" title="Go to OMD Bot"><ExternalLink className="absolute top-0 right-0" /></Link>
-              </div>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">{localTranslations.home.services.title}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {
+                localTranslations.home.services.service_list.map((service, index) => {
+                  return (
+                    <div key={service.title} className="flex flex-col items-center text-center relative">
+                      {icons[index]}
+                      <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                      <p className="text-gray-500 dark:text-gray-400">{service.description}</p>
+                      {links[index] && <Link href={links[index]} title="Learn More"><ExternalLink className="absolute top-0 right-0" /></Link>}
+                    </div>
+                  )})
+              }
             </div>
           </div>
         </section>

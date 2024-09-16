@@ -16,22 +16,11 @@ export type LangTranslations = {
         services: {
           title: string;
           learn_more: string;
-          data_analysis: {
-            title: string;
-            description: string;
-          },
-          data_visualization: {
-            title: string;
-            description: string;
-          },
-          predictive_modeling: {
-            title: string;
-            description: string;
-          },
-          chatbots: {
-            title: string;
-            description: string;
-          }
+          
+          service_list: {
+            title:string;
+            description:string;
+          }[]
         },
         contact: {
           title: string;
@@ -63,22 +52,24 @@ const Lang: LangTranslations = {
             services: {
               title: 'Our Services',
               learn_more: 'Learn More',
-              data_analysis: {
-                title: 'Data Analysis',
-                description: 'Comprehensive analysis of your data to uncover trends and insights.'
-              },
-              data_visualization: {
-                title: 'Data Visualization',
-                description: 'Create compelling visual representations of your data for easy understanding.'
-              },
-              predictive_modeling: {
-                title: 'Predictive Modeling',
-                description: 'Develop models to forecast trends and make data-driven decisions.'
-              },
-              chatbots: {
-                title: 'Intelligent Chatbots',
-                description: 'Develop chatbots that can interact with your customers and provide support.'
-              }
+              service_list: [
+                {
+                  title: 'Data Analysis',
+                  description: 'Comprehensive analysis of your data to uncover trends and insights.'
+                },
+                {
+                  title: 'Data Visualization',
+                  description: 'Create compelling visual representations of your data for easy understanding.'
+                },
+                {
+                  title: 'Predictive Modeling',
+                  description: 'Develop models to forecast trends and make data-driven decisions.'
+                },
+                {
+                  title: 'Intelligent Chatbots',
+                  description: 'Develop chatbots that can interact with your customers and provide support.'
+                }
+              ]
             },
 
             contact: {
@@ -102,22 +93,24 @@ const Lang: LangTranslations = {
             services: {
               title: 'Unsere Dienstleistungen',
               learn_more: 'Erfahren Sie mehr',
-              data_analysis: {
-                title: 'Datenanalyse',
-                description: 'Umfassende Analyse Ihrer Daten, um Trends und Erkenntnisse aufzudecken.'
-              },
-              data_visualization: {
-                title: 'Datenvisualisierung',
-                description: 'Erstellen überzeugender visueller Darstellungen Ihrer Daten für ein einfaches Verständnis.'
-              },
-              predictive_modeling: {
-                title: 'Vorhersagemodellierung',
-                description: 'Entwickeln von Modellen zur Prognose von Trends und zur datengesteuerten Entscheidungsfindung.'
-              },
-              chatbots: {
-                title: 'Intelligente Chatbots',
-                description: 'Entwickeln von Chatbots, die mit Ihren Kunden interagieren und Unterstützung bieten.'
-              }
+              service_list: [
+                {
+                  title: 'Datenanalyse',
+                  description: 'Umfassende Analyse Ihrer Daten, um Trends und Erkenntnisse aufzudecken.'
+                },
+                {
+                  title: 'Datenvisualisierung',
+                  description: 'Erstellen überzeugender visueller Darstellungen Ihrer Daten für ein einfaches Verständnis.'
+                },
+                {
+                  title: 'Vorhersagemodellierung',
+                  description: 'Entwicklung von Modellen zur Vorhersage von Trends und zur datengesteuerten Entscheidungsfindung.'
+                },
+                {
+                  title: 'Intelligente Chatbots',
+                  description: 'Entwicklung von Chatbots, die mit Ihren Kunden interagieren und Unterstützung bieten.'
+                }
+              ]
             },
 
             contact: {

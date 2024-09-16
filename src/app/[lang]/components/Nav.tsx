@@ -18,7 +18,7 @@ const Nav = () => {
   ]
 
   return (
-    <header className="px-4 lg:px-6 h-[7vh] flex items-center sticky top-0 bg-white">
+    <header className="px-4 lg:px-6 h-[7vh] flex items-center sticky top-0 bg-white z-10">
       <Link className='flex items-center justify-center' href={"/"}><span className="font-bold text-2xl">Laurin Brechter</span></Link>
       <nav className='ml-auto flex gap-4 sm:gap-6 items-center'>
       {
@@ -30,7 +30,7 @@ const Nav = () => {
           )
         })
       }
-      <Select name='locale'>
+      {/* <Select name='locale'>
       <SelectTrigger>
         <SelectValue placeholder="English" />
       </SelectTrigger>
@@ -38,7 +38,7 @@ const Nav = () => {
           <SelectItem value="de"><Link locale='de' href={'/blog'}>de</Link></SelectItem>
           <SelectItem value="en"><Link locale='en' href={'/'}>en</Link></SelectItem>
       </SelectContent>
-      </Select>
+      </Select> */}
       <Link locale='de' href={'/'}>de</Link>
       <Link locale='en' href={'/'}>en</Link>
       </nav>
