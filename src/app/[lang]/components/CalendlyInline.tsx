@@ -14,5 +14,10 @@ export default function CalendlyInline() {
     
     return (
     rootElement &&
-    <InlineWidget url="https://calendly.com/brechterlaurin/consultation-call"  />)
+    <InlineWidget url="https://calendly.com/brechterlaurin/consultation-call" styles={
+        {
+            height: '600px',
+            width: '600px',
+        }
+    } />)
 }

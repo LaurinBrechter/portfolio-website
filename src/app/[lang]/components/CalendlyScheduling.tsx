@@ -20,9 +20,9 @@ export default function CalendlyScheduling() {
          * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
          */
         rootElement={rootElement}
-        text="Click here to schedule!"
+        text="30min. free Consultion Call"
         textColor="#ffffff"
-        color="#00a2ff"
+        color="#124d28"
       />
     )
 }

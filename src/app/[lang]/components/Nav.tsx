@@ -2,18 +2,11 @@
 
 import React from 'react'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { usePathname, useRouter } from 'next/navigation'
-import { useLocale } from 'next-intl'
-import path from 'path'
 import { Link } from '@/src/i18n/routing'
 
 
 const Nav = () => {
 
-  // const pathname = usePathname()
-  // const locale = 
-  // console.log(pathname)
-  // split
 
   const routes = [
     // { name: 'About', path: '/about' },
@@ -26,7 +19,7 @@ const Nav = () => {
 
   return (
     <header className="px-4 lg:px-6 h-[7vh] flex items-center sticky top-0 bg-white">
-      <Link className='flex items-center justify-center' href={"/"}><span className="font-bold">Vertex Analytics</span></Link>
+      <Link className='flex items-center justify-center' href={"/"}><span className="font-bold text-2xl">Laurin Brechter</span></Link>
       <nav className='ml-auto flex gap-4 sm:gap-6 items-center'>
       {
         routes.map((route) => {
