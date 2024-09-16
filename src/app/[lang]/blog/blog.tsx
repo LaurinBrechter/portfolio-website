@@ -5,8 +5,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { link } from 'fs';
-import Link from 'next/link';
+import { Link } from '@/src/i18n/routing';
 import React, { useState } from 'react'
 
 
