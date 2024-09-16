@@ -29,7 +29,7 @@ export default function Home({ params }: { params: { lang: string } }) {
               </div>
               <div className="space-x-4">
                 <a href="#services">
-                  <Button variant="outline">Learn More</Button>
+                  <Button variant="outline">{localTranslations.home.learn_more}</Button>
                 </a>
               </div>
             </div>
@@ -89,22 +89,16 @@ export default function Home({ params }: { params: { lang: string } }) {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">{localTranslations.home.contact.title}</h2>
                 <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Ready to leverage your data? Let's discuss how I can help you achieve your goals.
+                  {localTranslations.home.contact.subtitle}
                 </p>
               </div>
-              {/* <div className="w-full max-w-sm space-y-2">
-                <form className="flex flex-col gap-2">
-                  <Input placeholder="Your Name" type="text" />
-                  <Input placeholder="Your Email" type="email" />
-                  <Button type="submit">Send Message</Button>
-                </form>
-              </div> */}
               <CalendlyInline />
             </div>
           </div>
         </section>
+        
       </>
   )
 }

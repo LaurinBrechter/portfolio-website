@@ -28,16 +28,6 @@ export default function Page() {
   return (
     <div className="flex items-center justify-center overflow-y-auto h-[93vh]" >
       <div className="flex flex-col w-[600px] gap-4 h-full">
-        {/* <Select>
-          <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="Theme" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="light">Light</SelectItem>
-            <SelectItem value="dark">Dark</SelectItem>
-            <SelectItem value="system">System</SelectItem>
-          </SelectContent>
-        </Select> */}
         <h1 className="text-3xl">Attribution Modeling</h1>
         <AttributionChart />
         <p>
