@@ -25,7 +25,7 @@ const Nav = () => {
   ]
 
   return (
-    <header className="px-4 lg:px-6 h-[7vh] flex items-center">
+    <header className="px-4 lg:px-6 h-[7vh] flex items-center sticky top-0 bg-white">
       <Link className='flex items-center justify-center' href={"/"}><span className="font-bold">Vertex Analytics</span></Link>
       <nav className='ml-auto flex gap-4 sm:gap-6 items-center'>
       {

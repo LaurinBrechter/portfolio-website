@@ -1,7 +1,12 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { BarChart, PieChart, LineChart, Database } from "lucide-react"
+import { BarChart, PieChart, LineChart, Database, Bot, ExternalLink } from "lucide-react"
+
 import Lang from "@/src/lang/lang"
+import { Link } from "@/src/i18n/routing"
+import { Card } from "@/components/ui/card"
+import CalendlyInline from "./components/CalendlyInline"
+
 
 
 export default function Home({ params }: { params: { lang: string } }) {
@@ -10,21 +15,22 @@ export default function Home({ params }: { params: { lang: string } }) {
   const localTranslations = Lang[locale]
 
   return (
-    <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-          <div className="container px-4 md:px-6">
+    <>
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 h-[93vh]" id="welcome-container">
+          <div className="container px-4 md:px-6 z-10">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   {localTranslations.home.title}
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+                <p className="mx-auto max-w-[700px] text-gray-800 md:text-xl dark:text-gray-400 font-medium bg-white bg-opacity-60">
                   {localTranslations.home.subtitle}
                 </p>
               </div>
               <div className="space-x-4">
-                <Button>Get Started</Button>
-                <Button variant="outline">Learn More</Button>
+                <a href="#services">
+                  <Button variant="outline">Learn More</Button>
+                </a>
               </div>
             </div>
           </div>
@@ -32,7 +38,7 @@ export default function Home({ params }: { params: { lang: string } }) {
         <section id="services" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8"> 
               <div className="flex flex-col items-center text-center">
                 <BarChart className="h-12 w-12 mb-4 text-primary" />
                 <h3 className="text-xl font-bold mb-2">Data Analysis</h3>
@@ -48,6 +54,12 @@ export default function Home({ params }: { params: { lang: string } }) {
                 <h3 className="text-xl font-bold mb-2">Predictive Modeling</h3>
                 <p className="text-gray-500 dark:text-gray-400">Develop models to forecast trends and make data-driven decisions.</p>
               </div>
+              <div className="flex flex-col items-center text-center relative">
+                <Bot className="h-12 w-12 mb-4 text-primary" />
+                <h3 className="text-xl font-bold mb-2">Intelligent Chatbots</h3>
+                <p className="text-gray-500 dark:text-gray-400">Develop chatbots that can interact with your customers and provide support.</p>
+                <Link href="/blog/chatbots/omd-bot" title="Go to OMD Bot"><ExternalLink className="absolute top-0 right-0" /></Link>
+              </div>
             </div>
           </div>
         </section>
@@ -59,6 +71,7 @@ export default function Home({ params }: { params: { lang: string } }) {
                 <p className="text-gray-500 dark:text-gray-400">
                   {localTranslations.home.about.content}
                 </p>
+                
               </div>
               <div className="flex justify-center">
                 <img
@@ -81,16 +94,17 @@ export default function Home({ params }: { params: { lang: string } }) {
                   Ready to leverage your data? Let's discuss how I can help you achieve your goals.
                 </p>
               </div>
-              <div className="w-full max-w-sm space-y-2">
+              {/* <div className="w-full max-w-sm space-y-2">
                 <form className="flex flex-col gap-2">
                   <Input placeholder="Your Name" type="text" />
                   <Input placeholder="Your Email" type="email" />
                   <Button type="submit">Send Message</Button>
                 </form>
-              </div>
+              </div> */}
+              <CalendlyInline />
             </div>
           </div>
         </section>
-      </main>
+      </>
   )
 }

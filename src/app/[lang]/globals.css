@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+#welcome-container {
+  background-image: url('/background_gaussian_medium.png');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
