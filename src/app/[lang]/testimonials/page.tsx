@@ -1,8 +1,8 @@
 import React from 'react'
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import Link from 'next/link'
 import Lang from '@/src/lang/lang'
+import { Link } from '@/src/i18n/routing'
 // import { useRouter } from 'next/router'
 
 interface TestimonialProps {
@@ -77,7 +77,13 @@ export default function TestimonialsSection({ params }: { params: { lang: string
       name: "Bob Smith",
       company: "Global Solutions Ltd.",
       title: "Marketing Director",
-      testimonial: "Working with this data scientist has transformed our marketing approach. Their predictive models have significantly improved our campaign ROI and customer targeting."
+      testimonial: "Working with this data scientist has transformed our marketing approach. Their predictive models have significantly improved our campaign ROI and customer targeting.",
+      relatedPosts: [
+        {
+          title: 'OMD Chatbot',
+          url: '/blog/chatbots/omd-bot'
+        }
+      ]
     },
     {
       image: "/placeholder.svg?height=100&width=100",

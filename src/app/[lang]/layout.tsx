@@ -29,8 +29,8 @@ export default async function LocaleLayout({
         <div id='root' className="flex flex-col min-h-[100dvh]">
           <NextIntlClientProvider messages={messages}>
             <Nav />
+            <main className="flex-1">{children}</main>
           </NextIntlClientProvider>
-          <main className="flex-1">{children}</main>
           <CalendlyScheduling />
         </div>
       </body>
