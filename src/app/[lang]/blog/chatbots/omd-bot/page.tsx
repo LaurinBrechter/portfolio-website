@@ -12,6 +12,7 @@ export default function Page ({ params }: { params: { lang: string } }) {
                 <h1 className="text-3xl font-bold">Intelligent Chatbots at OMD</h1>
                 <p>Especially when it comes to “AI”, actions speak louder than words. Together with the people at Optimize My Day GmbH, we created a chatbot that allows users to interact with their documents, retrieve information and build up their knowledge base.</p>
                 <p>Another chatbot handles customer support by rescheduling appointments with customers</p>
+                <p>Part of this project was presented in an online webinar. You can watch the full recording <a className="text-blue-600 hover:underline" href="https://www.youtube.com/watch?v=5B2H9DawL9I&t=48s"> here</a> for more information.</p>
                 <section>
                     <h3 className="text-2xl font-bold">Intelligent Knowledge Management</h3>
                     <p>OMD is a company that offers mobile workforce solutions to various companies such as Culligan and CWS. These companies have service workers that need to fulfill tasks such as repairing or replacing a piece of equipment.</p>

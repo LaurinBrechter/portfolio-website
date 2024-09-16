@@ -1,11 +1,52 @@
 [
-    { "title": "How to use PostgresDB as your One-Stop RAG Solution", "description": "This post shows how to use postgres as a vector db and how to ingest and retrieve documents with the help of Python and SQLAlchemy", "tags": ["postgres", "rag"] },
-    { "title": "Putting Bayesian Models into Production", "description": "In this post, I will highlight some of the things to consider when putting Bayesian models into production and how they compare to…", "tags": ["bayesian"] },
-    { "title": "Customer Analytics: Pattern Mining on Clickstream Data in Python", "description": "This post shows how we can use raw clickstream data to find patterns in the online user behavior of customers of an ecommerce site.", "tags": ["customer analytics", "pattern mining"] },
-    { "title": "A Data-driven, Bayesian Approach to the Critical Path Method", "description": "In this post, I provide a short review of the CPM project management technique. After this, we discuss the shortcomings and see how a…", "tags": ["bayesian", "cpm"] },
-    { "title": "Applying the Bayesian Gamma-gamma Model for Customer Lifetime Valuation", "description": "This post applies the gamma-gamma model for Customer Lifetime Valuation (CLV) to a brazilian e-commerce dataset…", "tags": ["bayesian", "clv"] },
-    { "title": "Material Flow Simulation and Optimization with SimPy", "description": "This post will show you how to setup a simpy environment in Python that models the flow of raw materials through a factory. Additionally…", "tags": ["simulation", "optimization"] },
-    { "title": "A Bayesian Approach to Customer Lifetime Valuation", "description": "This post applies the BG/NBD model for Customer Lifetime Value analysis to a retail dataset.", "tags": ["bayesian", "clv"] },
-    { "title": "Causal Inference with CausalPy", "description": "This post provides a short introduction to causal inference with a practical example showing how synthetic control can work in CausalPy", "tags": ["causal inference", "causalpy"] },
-    { "title": "The Interactive Guide to Attribution Modeling", "description": "This post provides a short introduction to attribution modeling and how it can be used to measure the effectiveness of marketing campaigns.", "tags": ["marketing analytics"], "link": "/blog/marketing-analytics/attribution-modeling" }
+  {
+    "title": "How to use PostgresDB as your One-Stop RAG Solution",
+    "description": "This post shows how to use postgres as a vector db and how to ingest and retrieve documents with the help of Python and SQLAlchemy",
+    "tags": ["postgres", "rag"],
+    "link": "https://medium.com/@brechterlaurin/how-to-use-postgresdb-as-your-one-stop-rag-solution-8536ef7d762e"
+  },
+  {
+    "title": "Putting Bayesian Models into Production",
+    "description": "In this post, I will highlight some of the things to consider when putting Bayesian models into production and how they compare to…",
+    "tags": ["bayesian"],
+    "link": "https://medium.com/@brechterlaurin/putting-bayesian-models-into-production-1efae307a138"
+  },
+  {
+    "title": "Customer Analytics: Pattern Mining on Clickstream Data in Python",
+    "description": "This post shows how we can use raw clickstream data to find patterns in the online user behavior of customers of an ecommerce site.",
+    "tags": ["customer analytics", "pattern mining"],
+    "link": "https://medium.com/@brechterlaurin/customer-analytics-pattern-mining-on-clickstream-data-in-python-1bcd2de15a5d"
+  },
+  {
+    "title": "A Data-driven, Bayesian Approach to the Critical Path Method",
+    "description": "In this post, I provide a short review of the CPM project management technique. After this, we discuss the shortcomings and see how a…",
+    "tags": ["bayesian", "cpm"],
+    "link": "https://medium.com/@brechterlaurin/a-data-driven-bayesian-approach-to-the-critical-path-method-26fd7905e85b"
+  },
+  {
+    "title": "Applying the Bayesian Gamma-gamma Model for Customer Lifetime Valuation",
+    "description": "This post applies the gamma-gamma model for Customer Lifetime Valuation (CLV) to a brazilian e-commerce dataset…",
+    "tags": ["bayesian", "clv"]
+  },
+  {
+    "title": "Material Flow Simulation and Optimization with SimPy",
+    "description": "This post will show you how to setup a simpy environment in Python that models the flow of raw materials through a factory. Additionally…",
+    "tags": ["simulation", "optimization"]
+  },
+  {
+    "title": "A Bayesian Approach to Customer Lifetime Valuation",
+    "description": "This post applies the BG/NBD model for Customer Lifetime Value analysis to a retail dataset.",
+    "tags": ["bayesian", "clv"]
+  },
+  {
+    "title": "Causal Inference with CausalPy",
+    "description": "This post provides a short introduction to causal inference with a practical example showing how synthetic control can work in CausalPy",
+    "tags": ["causal inference", "causalpy"]
+  },
+  {
+    "title": "The Interactive Guide to Attribution Modeling",
+    "description": "This post provides a short introduction to attribution modeling and how it can be used to measure the effectiveness of marketing campaigns.",
+    "tags": ["marketing analytics"],
+    "link": "/blog/marketing-analytics/attribution-modeling"
+  }
 ]

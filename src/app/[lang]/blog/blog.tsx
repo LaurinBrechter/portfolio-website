@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Link } from '@/src/i18n/routing';
+import Image from 'next/image';
 import React, { useState } from 'react'
 
 
@@ -27,7 +28,11 @@ function BlogEntry(props: {
   title: string, description: string, tags: string[], link?: string
 }) {
   return (
-    <Card>
+    <Card className='flex'>
+      {/* <div className='h-[200px] w-[200px]'> */}
+        <Image src='/blog/causal_inf_causal_py.webp' width={200} height={200} alt='cool' className='p-4 object-contain' />
+      {/* </div> */}
+      <div>
       <CardHeader className='flex text-left'>
         <CardTitle>{
           props.link ? <Link href={props.link} className='hover:underline'>{props.title}</Link> : props.title  
@@ -45,6 +50,7 @@ function BlogEntry(props: {
       <CardContent className='flex text-center'>
         {props.description}
       </CardContent>
+      </div>
     </Card>
   )
 }
