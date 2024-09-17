@@ -1,39 +1,44 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { LangTranslations } from "@/src/lang/lang"
 import { TrendingUp, Users, DollarSign } from "lucide-react"
 
-export default function CaseStudies() {
-    return (
+// const CaseStudies = (props: {locale: string, translations: LangTranslations}) => {
+export function CaseStudies(props: {locale: string, translations: LangTranslations}) {
+  
+  const localTranslations = props.translations[props.locale]
+
+  return (
         <section id="case-studies" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">Selected Case Studies</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">{localTranslations.home.caseStudies.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Card>
                 <CardHeader>
-                  <CardTitle>E-commerce Sales Optimization</CardTitle>
-                  <CardDescription>Boosting online sales through data-driven strategies</CardDescription>
+                  <CardTitle>{localTranslations.home.caseStudies.omd_appointbot.title}</CardTitle>
+                  <CardDescription>{localTranslations.home.caseStudies.omd_appointbot.subtitle}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center space-x-2 mb-2">
                     <TrendingUp className="h-5 w-5 text-green-500" />
-                    <span className="font-semibold text-green-500">35% increase in conversion rate</span>
+                    <span className="font-semibold text-green-500">{localTranslations.home.caseStudies.omd_appointbot.benefit}</span>
                   </div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Analyzed customer behavior data to optimize product recommendations and checkout process, resulting in a significant boost in sales.
+                  {localTranslations.home.caseStudies.omd_appointbot.description}
                   </p>
                 </CardContent>
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle>Customer Segmentation Analysis</CardTitle>
-                  <CardDescription>Tailoring marketing strategies for different customer groups</CardDescription>
+                  <CardTitle>{localTranslations.home.caseStudies.customer_segmentation.title}</CardTitle>
+                  <CardDescription>{localTranslations.home.caseStudies.customer_segmentation.subtitle}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center space-x-2 mb-2">
                     <Users className="h-5 w-5 text-blue-500" />
-                    <span className="font-semibold text-blue-500">5 distinct customer segments identified</span>
+                    <span className="font-semibold text-blue-500">{localTranslations.home.caseStudies.customer_segmentation.benefit}</span>
                   </div>
                   <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Used clustering algorithms to segment customers based on purchasing behavior, enabling targeted marketing campaigns and personalized experiences.
+                  {localTranslations.home.caseStudies.customer_segmentation.description}
                   </p>
                 </CardContent>
               </Card>
