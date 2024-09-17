@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   description: 'Leverage the power of data to make informed decisions. Laurin Brechter is a data scientist who helps businesses make data-driven decisions.',
 };
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({locale}));
-}
+// export function generateStaticParams() {
+//   return routing.locales.map((locale) => ({locale}));
+// }
 
 
 export default async function LocaleLayout({
