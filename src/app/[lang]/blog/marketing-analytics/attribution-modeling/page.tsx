@@ -26,7 +26,7 @@ const channels = ["LinkedId", "Google", "Mail", "Ads"];
 export default function Page() {
 
   return (
-    <div className="flex items-center justify-center overflow-y-auto h-[93vh]" >
+    <div className="flex items-center justify-center" >
       <div className="flex flex-col w-[600px] gap-4 h-full">
         <h1 className="text-3xl">Attribution Modeling</h1>
         <AttributionChart />

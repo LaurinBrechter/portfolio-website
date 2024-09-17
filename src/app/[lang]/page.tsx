@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { BarChart, PieChart, LineChart, Database, Bot, ExternalLink } from "lucide-react"
+import { BarChart, PieChart, LineChart, Database, Bot, ExternalLink, TrendingUp, Users, DollarSign } from "lucide-react"
 
 import Lang from "@/src/lang/lang"
 import { Link } from "@/src/i18n/routing"
-import { Card } from "@/components/ui/card"
 import CalendlyInline from "./components/CalendlyInline"
-
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import CaseStudies from "./components/CaseStudies"
 
 
 export default function Home({ params }: { params: { lang: string } }) {
@@ -89,6 +89,7 @@ export default function Home({ params }: { params: { lang: string } }) {
             </div>
           </div>
         </section>
+        <CaseStudies />
         <section id="contact" className="w-full py-12 md:py-24 lg:py-32 border-t">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">

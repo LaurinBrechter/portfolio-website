@@ -48,5 +48,11 @@
     "description": "This post provides a short introduction to attribution modeling and how it can be used to measure the effectiveness of marketing campaigns.",
     "tags": ["marketing analytics"],
     "link": "/blog/marketing-analytics/attribution-modeling"
+  },
+  {
+    "title": "Intelligent Chatbots at OMD",
+    "description": "Especially when it comes to “AI”, actions speak louder than words. Together with the people at Optimize My Day GmbH, we created a chatbot that allows users to interact with their documents, retrieve information and build up their knowledge base.",
+    "tags": ["nlp", "chatbots"],
+    "link": "/blog/chatbots/omd-bot"
   }
 ]

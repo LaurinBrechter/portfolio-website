@@ -47,7 +47,7 @@ function BlogEntry(props: {
           }
         </div>
       </CardHeader>
-      <CardContent className='flex text-center'>
+      <CardContent className='flex text-left'>
         {props.description}
       </CardContent>
       </div>
