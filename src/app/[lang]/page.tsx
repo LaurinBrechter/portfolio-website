@@ -31,7 +31,7 @@ export default function Home({ params }: { params: { lang: string } }) {
 
   return (
     <>
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 h-[93vh]" id="welcome-container">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 h-[100%]" id="welcome-container">
           <div className="container px-4 md:px-6 z-10">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">

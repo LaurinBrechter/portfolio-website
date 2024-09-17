@@ -90,7 +90,7 @@ const Blog = (props: {blog_data: Blog[]}) => {
   );
 
   return (
-    <div className='px-52 py-20 flex-col flex text-center h-full'>
+    <div className='px-52 py-20 flex-col flex text-center h-[87vh]'>
       <div className='flex gap-4 pr-4 pb-4'>
         <Input
           placeholder='Search Blogs'

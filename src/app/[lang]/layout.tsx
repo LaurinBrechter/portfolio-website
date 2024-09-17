@@ -37,11 +37,13 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <div id="root" className="flex flex-col min-h-[100dvh]">
+        <div id="root">
           <NextIntlClientProvider messages={messages}>
             <Nav />
-            <main className="flex-1">{children}</main>
-            <Footer />
+            <main className="h-[93vh] overflow-y-auto">
+              {children}
+              <Footer />
+            </main>
           </NextIntlClientProvider>
           <CalendlyScheduling />
         </div>
