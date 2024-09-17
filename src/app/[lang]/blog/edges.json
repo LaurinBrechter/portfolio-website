@@ -1,0 +1,57 @@
+[
+  {
+    "data": {
+      "id": "0",
+      "label": "How to use PostgresDB as your One-Stop RAG Solution"
+    }
+  },
+  { "data": { "id": "1", "label": "Putting Bayesian Models into Production" } },
+  {
+    "data": {
+      "id": "2",
+      "label": "Customer Analytics: Pattern Mining on Clickstream Data in Python"
+    }
+  },
+  {
+    "data": {
+      "id": "3",
+      "label": "A Data-driven, Bayesian Approach to the Critical Path Method"
+    }
+  },
+  {
+    "data": {
+      "id": "4",
+      "label": "Applying the Bayesian Gamma-gamma Model for Customer Lifetime Valuation"
+    }
+  },
+  {
+    "data": {
+      "id": "5",
+      "label": "Material Flow Simulation and Optimization with SimPy"
+    }
+  },
+  {
+    "data": {
+      "id": "6",
+      "label": "A Bayesian Approach to Customer Lifetime Valuation"
+    }
+  },
+  { "data": { "id": "7", "label": "Causal Inference with CausalPy" } },
+  {
+    "data": {
+      "id": "8",
+      "label": "The Interactive Guide to Attribution Modeling"
+    }
+  },
+  { "data": { "id": "9", "label": "Intelligent Chatbots at OMD" } },
+  { "data": { "source": "0", "target": "2", "distance": 3 } },
+  { "data": { "source": "1", "target": "3", "distance": 3 } },
+  { "data": { "source": "2", "target": "4", "distance": 3 } },
+  { "data": { "source": "3", "target": "1", "distance": 3 } },
+  { "data": { "source": "4", "target": "6", "distance": 2 } },
+  { "data": { "source": "5", "target": "7", "distance": 3 } },
+  { "data": { "source": "6", "target": "4", "distance": 2 } },
+  { "data": { "source": "7", "target": "5", "distance": 3 } },
+  { "data": { "source": "8", "target": "1", "distance": 3 } },
+  { "data": { "source": "9", "target": "8", "distance": 3 } }
+]

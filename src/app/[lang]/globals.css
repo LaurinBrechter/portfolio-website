@@ -10,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  @apply text-3xl font-bold;
+}
+
 
 @layer base {
   :root {

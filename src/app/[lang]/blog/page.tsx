@@ -1,6 +1,5 @@
 import Blog from "./blog";
 import fs from "fs";
-import path from "path";
 
 const Page = () => {
   
