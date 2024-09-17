@@ -1,5 +1,10 @@
 import Lang from "@/src/lang/lang"
+import { Metadata } from "next"
 
+export const metadata: Metadata = {
+    title: "Intelligent Chatbots at OMD",
+    description: 'Especially when it comes to “AI”, actions speak louder than words. Together with the people at Optimize My Day GmbH, we created a chatbot that allows users to interact with their documents, retrieve information and build up their knowledge base.',
+};
 
 
 export default function Page ({ params }: { params: { lang: string } }) {
