@@ -92,8 +92,8 @@ const Lang: LangTranslations = {
               title: 'Selected Case Studies',
               omd_appointbot: {
                 title: 'OMD Appointbot',
-                subtitle: 'A chatbot that helps patients schedule appointments with doctors.',
-                description: 'OMD Appointbot is a chatbot that helps patients schedule appointments with doctors. It uses natural language processing to understand patient requests and book appointments accordingly. The chatbot has reduced the time spent on scheduling appointments and has improved the overall patient experience.',
+                subtitle: 'A chatbot that helps customers reschedule repair appointments.',
+                description: 'The OMD appointbot is a chatbot based on Large Lanuguage Models (LLMs) that helps customers reschedule their appointment for maintenance and repair work thereby reducing the time spent on customer service and improving the overall customer experience.',
                 benefit: 'Reduce time spent with customer service by 80%'
               },
               customer_segmentation: {
@@ -148,8 +148,8 @@ const Lang: LangTranslations = {
               title: 'Ausgewählte Fallstudien',
               omd_appointbot: {
                 title: 'OMD Appointbot',
-                subtitle: 'Ein Chatbot, der Patienten hilft, Termine mit Ärzten zu vereinbaren.',
-                description: 'OMD Appointbot ist ein Chatbot, der Patienten hilft, Termine mit Ärzten zu vereinbaren. Er verwendet Natural Language Processing, um Patientenanfragen zu verstehen und entsprechend Termine zu buchen. Der Chatbot hat die Zeit für die Terminvereinbarung reduziert und das gesamte Patientenerlebnis verbessert.',
+                subtitle: 'Ein Chatbot, Kunden hilft, Reparaturtermine neu festzulegen.',
+                description: 'Der OMD Appointbot ist ein Chatbot, der auf Large Language Models (LLMs) basiert und Kunden dabei hilft, ihren Termin für Wartungs- und Reparaturarbeiten neu zu planen. Dadurch wird die Zeit die für den Kundenservice benötigt wird, reduziert und die allgemeine Kundenerfahrung verbessert wird.',
                 benefit: 'Reduzierung der Zeit für den Kundenservice um 80%'
               },
               customer_segmentation: {
