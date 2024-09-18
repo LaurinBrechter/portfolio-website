@@ -19,7 +19,7 @@ export default function Page ({ params }: { params: { lang: string } }) {
     const localTranslations = Lang[locale]
     
     return (
-        <div className="flex items-center justify-center overflow-y-auto py-20" >
+        <article className="flex items-center justify-center overflow-y-auto py-20" >
             <div className="flex flex-col w-[600px] gap-4 h-full">
                 <h1>Intelligent Chatbots at OMD</h1>
                 <p>Especially when it comes to “AI”, actions speak louder than words. Together with the people at Optimize My Day GmbH, we created a chatbot that allows users to interact with their documents, retrieve information and build up their knowledge base.</p>
@@ -41,6 +41,6 @@ export default function Page ({ params }: { params: { lang: string } }) {
                     <p>With the help of a chatbot, customers can now reschedule their appointments themselves. The chatbot is able to understand the customer’s request and then automatically reschedule the appointment. This saves a lot of time for the customers and the company.</p>
                 </section>
             </div>
-        </div>
+        </article>
     )
 }

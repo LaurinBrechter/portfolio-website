@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     default: "Laurin Brechter Analytics",
     template: '%s | Laurin Brechter Analytics',
   },
+  // title: 'Laurin Brechter Analytics',
   description: 'Leverage the power of data to make informed decisions. Laurin Brechter is a data scientist who helps businesses make data-driven decisions.',
 };
 
@@ -32,6 +33,8 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  // unstable_setRequestLocale(locale);
+  
   const messages = await getMessages();
 
   return (

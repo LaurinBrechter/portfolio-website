@@ -1,15 +1,17 @@
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+// import { Input } from "@/components/ui/input"
 import { BarChart, PieChart, LineChart, Database, Bot, ExternalLink, TrendingUp, Users, DollarSign } from "lucide-react"
-
+// import {unstable_setRequestLocale} from 'next-intl/server';
 import Lang from "@/src/lang/lang"
 import { Link } from "@/src/i18n/routing"
 import CalendlyInline from "./components/CalendlyInline"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+// import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CaseStudies } from "./components/CaseStudies"
 
 
 export default function Home({ params }: { params: { lang: string } }) {
+  // unstable_setRequestLocale(params.lang);
+
 
   const locale = params.lang ? params.lang : 'en'
   const localTranslations = Lang[locale]
