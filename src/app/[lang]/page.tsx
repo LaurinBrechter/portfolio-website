@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button"
 // import { Input } from "@/components/ui/input"
-import { BarChart, PieChart, LineChart, Database, Bot, ExternalLink, TrendingUp, Users, DollarSign } from "lucide-react"
+import { BarChart, PieChart, LineChart, Database, Bot, ExternalLink, TrendingUp, Users, DollarSign, Github, Linkedin, FileText } from "lucide-react"
 // import {unstable_setRequestLocale} from 'next-intl/server';
 import Lang from "@/src/lang/lang"
 import { Link } from "@/src/i18n/routing"
 import CalendlyInline from "./components/CalendlyInline"
 // import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CaseStudies } from "./components/CaseStudies"
+import Image from "next/image"
 
 
 export default function Home({ params }: { params: { lang: string } }) {
@@ -19,7 +20,7 @@ export default function Home({ params }: { params: { lang: string } }) {
 
   const icons = [
     <BarChart className="h-12 w-12 mb-4 text-primary" />,
-    <PieChart className="h-12 w-12 mb-4 text-primary" />,
+    // <PieChart className="h-12 w-12 mb-4 text-primary" />,
     <LineChart className="h-12 w-12 mb-4 text-primary" />,
     <Bot className="h-12 w-12 mb-4 text-primary" />
   ]
@@ -63,7 +64,7 @@ export default function Home({ params }: { params: { lang: string } }) {
                       {icons[index]}
                       <h3 className="text-xl font-bold mb-2">{service.title}</h3>
                       <p className="text-gray-500 dark:text-gray-400">{service.description}</p>
-                      {links[index] && <Link href={links[index]} title="Learn More"><ExternalLink className="absolute top-0 right-0" /></Link>}
+                      {/* {links[index] && <Link href={links[index]} title="Learn More"><ExternalLink className="absolute top-0 right-0" /></Link>} */}
                     </div>
                   )})
               }
@@ -78,13 +79,27 @@ export default function Home({ params }: { params: { lang: string } }) {
                 <p className="text-gray-500 dark:text-gray-400">
                   {localTranslations.home.about.content}
                 </p>
+                <div className="flex space-x-4">
+                  <a href="https://github.com/LaurinBrechter" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                    <Github className="h-6 w-6" />
+                    <span className="sr-only">GitHub</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/laurin-brechter/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                    <Linkedin className="h-6 w-6" />
+                    <span className="sr-only">LinkedIn</span>
+                  </a>
+                  <a href="https://medium.com/@brechterlaurin" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                    <Image src="/medium-icon-svgrepo-com.svg" alt="Medium" width={24} height={24} />
+                    <span className="sr-only">Medium</span>
+                  </a>
+                </div>
               </div>
               <div className="flex justify-center">
                 <img
                   alt="Data Analyst"
                   className="aspect-video overflow-hidden rounded-xl object-cover object-center"
                   height="310"
-                  src="/profile.jpg?height=310&width=550"
+                  src="/profile_new.jpg?height=310&width=550"
                   width="550"
                 />
               </div>

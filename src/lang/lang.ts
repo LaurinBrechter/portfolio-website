@@ -70,10 +70,10 @@ const Lang: LangTranslations = {
                   title: 'Data Analysis',
                   description: 'Comprehensive analysis of your data to uncover trends and insights.'
                 },
-                {
-                  title: 'Data Visualization',
-                  description: 'Create compelling visual representations of your data for easy understanding.'
-                },
+                // {
+                //   title: 'Data Visualization',
+                //   description: 'Create compelling visual representations of your data for easy understanding.'
+                // },
                 {
                   title: 'Predictive Modeling',
                   description: 'Develop models to forecast trends and make data-driven decisions.'
@@ -86,7 +86,7 @@ const Lang: LangTranslations = {
             },
             about: {
               title: 'About Me',
-              content: 'As a seasoned data analyst and scientist, I bring years of experience in transforming complex data into clear, actionable insights. My expertise spans various industries, allowing me to tackle diverse challenges and deliver tailored solutions.'
+              content: 'I started my career as a data analyst and scientist about 4 years ago, and have since worked with a variety of clients across different industries. I have a passion for transforming complex data into clear, actionable insights that drive business growth.'
             },
             caseStudies: {
               title: 'Selected Case Studies',
@@ -126,10 +126,10 @@ const Lang: LangTranslations = {
                   title: 'Datenanalyse',
                   description: 'Umfassende Analyse Ihrer Daten, um Trends und Erkenntnisse aufzudecken.'
                 },
-                {
-                  title: 'Datenvisualisierung',
-                  description: 'Erstellen überzeugender visueller Darstellungen Ihrer Daten für ein einfaches Verständnis.'
-                },
+                // {
+                //   title: 'Datenvisualisierung',
+                //   description: 'Erstellen überzeugender visueller Darstellungen Ihrer Daten für ein einfaches Verständnis.'
+                // },
                 {
                   title: 'Vorhersagemodellierung',
                   description: 'Entwicklung von Modellen zur Vorhersage von Trends und zur datengesteuerten Entscheidungsfindung.'
@@ -142,14 +142,14 @@ const Lang: LangTranslations = {
             },
             about: {
               title: 'Über mich',
-              content: 'Als erfahrener Datenanalyst und Wissenschaftler bringe ich jahrelange Erfahrung in der Umwandlung komplexer Daten in klare, handlungsorientierte Erkenntnisse mit. Meine Expertise erstreckt sich über verschiedene Branchen, was es mir ermöglicht, vielfältige Herausforderungen anzugehen und maßgeschneiderte Lösungen zu liefern.'
+              content: 'Ich habe meine Karriere vor etwa 4 Jahren als Datenanalyst und Wissenschaftler begonnen und seitdem mit einer Vielzahl von Kunden aus verschiedenen Branchen zusammengearbeitet. Ich habe eine Leidenschaft dafür, komplexe Daten in klare, handlungsorientierte Erkenntnisse umzuwandeln, die das Unternehmenswachstum vorantreiben.'
             },
             caseStudies: {
               title: 'Ausgewählte Fallstudien',
               omd_appointbot: {
                 title: 'OMD Appointbot',
                 subtitle: 'Ein Chatbot, Kunden hilft, Reparaturtermine neu festzulegen.',
-                description: 'Der OMD Appointbot ist ein Chatbot, der auf Large Language Models (LLMs) basiert und Kunden dabei hilft, ihren Termin für Wartungs- und Reparaturarbeiten neu zu planen. Dadurch wird die Zeit die für den Kundenservice benötigt wird, reduziert und die allgemeine Kundenerfahrung verbessert wird.',
+                description: 'Der OMD Appointbot ist ein Chatbot, der auf Large Language Models (LLMs) basiert und Kunden dabei hilft, ihren Termin für Wartungs- und Reparaturarbeiten neu zu planen. Dadurch wird die Zeit die für den Kundenservice benötigt wird, reduziert und die allgemeine Kundenerfahrung verbessert.',
                 benefit: 'Reduzierung der Zeit für den Kundenservice um 80%'
               },
               customer_segmentation: {
