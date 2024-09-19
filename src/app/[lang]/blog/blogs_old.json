@@ -6,6 +6,16 @@
     "link": "https://medium.com/@brechterlaurin/how-to-use-postgresdb-as-your-one-stop-rag-solution-8536ef7d762e"
   },
   {
+    "title": "Market Basket Analysis Using High Utility Itemset Mining",
+    "tags": ["market basket analysis", "pattern mining"],
+    "link": "https://medium.com/towards-data-science/market-basket-analysis-using-high-utility-itemset-mining-df233b297c0d",
+    "date": "2024-09-11"
+
+  },
+  {
+    "title": "An Introduction to Bayesian A/B Testing",
+  }
+  {
     "title": "Putting Bayesian Models into Production",
     "description": "In this post, I will highlight some of the things to consider when putting Bayesian models into production and how they compare to…",
     "tags": ["bayesian"],

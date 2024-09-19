@@ -2,48 +2,69 @@
   {
     "data": {
       "id": "0",
-      "label": "How to use PostgresDB as your One-Stop RAG Solution"
+      "label": "How to use PostgresDB as your One-Stop RAG Solution",
+      "href": "https://medium.com/@brechterlaurin/how-to-use-postgresdb-as-your-one-stop-rag-solution-8536ef7d762e"
     }
   },
-  { "data": { "id": "1", "label": "Putting Bayesian Models into Production" } },
+  {
+    "data": {
+      "id": "1",
+      "label": "Putting Bayesian Models into Production",
+      "href": "https://medium.com/@brechterlaurin/putting-bayesian-models-into-production-1efae307a138"
+    }
+  },
   {
     "data": {
       "id": "2",
-      "label": "Customer Analytics: Pattern Mining on Clickstream Data in Python"
+      "label": "Customer Analytics: Pattern Mining on Clickstream Data in Python",
+      "href": "https://medium.com/@brechterlaurin/customer-analytics-pattern-mining-on-clickstream-data-in-python-1bcd2de15a5d"
     }
   },
   {
     "data": {
       "id": "3",
-      "label": "A Data-driven, Bayesian Approach to the Critical Path Method"
+      "label": "A Data-driven, Bayesian Approach to the Critical Path Method",
+      "href": "https://medium.com/@brechterlaurin/a-data-driven-bayesian-approach-to-the-critical-path-method-26fd7905e85b"
     }
   },
   {
     "data": {
       "id": "4",
-      "label": "Applying the Bayesian Gamma-gamma Model for Customer Lifetime Valuation"
+      "label": "Applying the Bayesian Gamma-gamma Model for Customer Lifetime Valuation",
+      "href": ""
     }
   },
   {
     "data": {
       "id": "5",
-      "label": "Material Flow Simulation and Optimization with SimPy"
+      "label": "Material Flow Simulation and Optimization with SimPy",
+      "href": ""
     }
   },
   {
     "data": {
       "id": "6",
-      "label": "A Bayesian Approach to Customer Lifetime Valuation"
+      "label": "A Bayesian Approach to Customer Lifetime Valuation",
+      "href": ""
     }
   },
-  { "data": { "id": "7", "label": "Causal Inference with CausalPy" } },
+  {
+    "data": { "id": "7", "label": "Causal Inference with CausalPy", "href": "" }
+  },
   {
     "data": {
       "id": "8",
-      "label": "The Interactive Guide to Attribution Modeling"
+      "label": "The Interactive Guide to Attribution Modeling",
+      "href": "/blog/marketing-analytics/attribution-modeling"
     }
   },
-  { "data": { "id": "9", "label": "Intelligent Chatbots at OMD" } },
+  {
+    "data": {
+      "id": "9",
+      "label": "Intelligent Chatbots at OMD",
+      "href": "/en/blog/chatbots/omd-bot"
+    }
+  },
   { "data": { "source": "0", "target": "2", "distance": 3 } },
   { "data": { "source": "1", "target": "3", "distance": 3 } },
   { "data": { "source": "2", "target": "4", "distance": 3 } },
