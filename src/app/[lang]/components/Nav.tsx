@@ -25,7 +25,7 @@ const Nav = () => {
   return (
     <header className="px-4 lg:px-6 h-[7vh] flex items-center sticky top-0 bg-white z-10">
       <Link className="flex items-center justify-center" href={"/"}>
-        <span className="font-bold text-2xl">Laurin Brechter</span>
+        <span className="font-bold lg:text-2xl">Laurin Brechter</span>
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
         {routes.map((route) => {
@@ -48,7 +48,7 @@ const Nav = () => {
             <SelectItem value="en"><Link locale='en' href={'/'}>en</Link></SelectItem>
         </SelectContent>
         </Select> */}
-        <div className="flex items-center pl-4 gap-3">
+        <div className="flex items-center pl-2 flex-col">
           <Link
             locale="de"
             href={pathname}

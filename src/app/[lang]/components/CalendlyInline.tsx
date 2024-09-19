@@ -17,7 +17,7 @@ export default function CalendlyInline() {
     <InlineWidget url="https://calendly.com/brechterlaurin/consultation-call" styles={
         {
             height: '600px',
-            width: '600px',
+            width: '400px',
         }
     } />)
 }

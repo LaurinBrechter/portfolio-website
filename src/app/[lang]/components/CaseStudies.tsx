@@ -31,7 +31,7 @@ export function CaseStudies(props: {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Link href={"/blog/chatbots/omd-bot"} className="group">
             <Card className="h-full transition-all duration-200 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg">
-              <CardHeader className="relative">
+              <CardHeader className="pb-2">
                 <CardTitle>
                   {localTranslations.home.caseStudies.omd_appointbot.title}
                 </CardTitle>
@@ -61,7 +61,7 @@ export function CaseStudies(props: {
             className="group"
           >
             <Card className="h-full transition-all duration-200 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg">
-              <CardHeader>
+              <CardHeader className="pb-2">
                 <CardTitle>
                   {
                     localTranslations.home.caseStudies.customer_segmentation
@@ -96,7 +96,7 @@ export function CaseStudies(props: {
           </Link>
           <Link href="/blog/customer-segmentation-analysis" className="group">
             <Card className="h-full transition-all duration-200 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg">
-              <CardHeader>
+              <CardHeader className="pb-2">
                 <CardTitle>Predictive Maintenance Model</CardTitle>
                 <CardDescription>
                   Reducing downtime in manufacturing processes

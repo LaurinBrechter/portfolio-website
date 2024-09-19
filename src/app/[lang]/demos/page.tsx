@@ -10,7 +10,7 @@ const Demos = () => {
   return (
     <div className='flex items-center justify-center h-[87vh] flex-col'>
       <h1>Demos</h1>
-      <p>Graph based overview over my projects and blogs</p>
+      <p className='pb-4'>Graph based overview over my projects and blogs</p>
       <ContentGraph graphData={graphDataJson}  />
     </div>
   )

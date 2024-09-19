@@ -43,7 +43,7 @@ export default async function LocaleLayout({
         <div id="root">
           <NextIntlClientProvider messages={messages}>
             <Nav />
-            <main className="h-[93vh] overflow-y-auto">
+            <main className="h-[93vh] overflow-y-auto scroll-smooth">
               {children}
               <Footer />
             </main>

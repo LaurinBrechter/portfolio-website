@@ -6,9 +6,6 @@
   background-image: url('/background_gaussian_medium.png');
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 h1 {
   @apply text-3xl font-bold;
@@ -44,6 +41,7 @@ ol {
 @layer base {
   ul, ol {
     list-style: revert;
+    list-style-position: inside;
   }
 }
 
