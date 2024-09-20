@@ -52,6 +52,7 @@ export function CaseStudies(props: {
                       .description
                   }
                 </p>
+                <Link href={'/blog/chatbots/omd-bot'} className="hover:underline underline-offset-4">Zur Case Study</Link>
               </CardContent>
             </Card>
           </Link>
