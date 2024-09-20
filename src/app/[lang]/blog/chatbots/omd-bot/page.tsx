@@ -1,5 +1,6 @@
 import Lang from "@/src/lang/lang"
 import { Metadata } from "next"
+import Image from "next/image";
 
 
 export async function generateMetadata({
@@ -20,11 +21,12 @@ export default function Page ({ params }: { params: { lang: string } }) {
     
     return (
         <article className="flex items-center justify-center overflow-y-auto py-20" >
-            <div className="flex flex-col w-[600px] gap-4 h-full">
+            <div className="flex flex-col w-[600px] gap-4 h-full p-3">
                 <h1>Intelligent Chatbots at OMD</h1>
                 <p>Especially when it comes to “AI”, actions speak louder than words. Together with the people at Optimize My Day GmbH, we created a chatbot that allows users to interact with their documents, retrieve information and build up their knowledge base.</p>
                 <p>Another chatbot handles customer support by rescheduling appointments with customers</p>
                 <p>Part of this project was presented in an online webinar. You can watch the full recording <a className="text-blue-600 hover:underline" href="https://www.youtube.com/watch?v=5B2H9DawL9I&t=48s"> here</a> for more information.</p>
+                <Image src={'/omd-appointbot.png'} alt="screenshot of omd-appointbot interface" width={300} height={300} />
                 <section>
                     <h3 >Intelligent Knowledge Management</h3>
                     <p>OMD is a company that offers mobile workforce solutions to various companies such as Culligan and CWS. These companies have service workers that need to fulfill tasks such as repairing or replacing a piece of equipment.</p>

@@ -82,15 +82,15 @@ export default function Home({ params }: { params: { lang: string } }) {
                 <div className="flex space-x-4">
                   <a href="https://github.com/LaurinBrechter" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
                     <Github className="h-6 w-6" />
-                    <span className="sr-only">GitHub</span>
+                    {/* <span className="sr-only">GitHub</span> */}
                   </a>
                   <a href="https://www.linkedin.com/in/laurin-brechter/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
                     <Linkedin className="h-6 w-6" />
-                    <span className="sr-only">LinkedIn</span>
+                    {/* <span className="sr-only">LinkedIn</span> */}
                   </a>
                   <a href="https://medium.com/@brechterlaurin" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
                     <Image src="/medium-icon-svgrepo-com.svg" alt="Medium" width={24} height={24} />
-                    <span className="sr-only">Medium</span>
+                    {/* <span className="sr-only">Medium</span> */}
                   </a>
                 </div>
               </div>
