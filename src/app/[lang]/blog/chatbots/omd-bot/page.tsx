@@ -21,12 +21,11 @@ export default function Page ({ params }: { params: { lang: string } }) {
     
     return (
         <article className="flex items-center justify-center overflow-y-auto py-20" >
-            <div className="flex flex-col w-[600px] gap-4 h-full p-3">
-                <h1>Intelligent Chatbots at OMD</h1>
+            <div className="flex flex-col w-[600px] max-w-[85%] gap-4 h-full p-3 items-center">
+                <h1 className="text-left w-full">Intelligent Chatbots at OMD</h1>
                 <p>Especially when it comes to “AI”, actions speak louder than words. Together with the people at Optimize My Day GmbH, we created a chatbot that allows users to interact with their documents, retrieve information and build up their knowledge base.</p>
                 <p>Another chatbot handles customer support by rescheduling appointments with customers</p>
                 <p>Part of this project was presented in an online webinar. You can watch the full recording <a className="text-blue-600 hover:underline" href="https://www.youtube.com/watch?v=5B2H9DawL9I&t=48s"> here</a> for more information.</p>
-                <Image src={'/omd-appointbot.png'} alt="screenshot of omd-appointbot interface" width={300} height={300} />
                 <section>
                     <h3 >Intelligent Knowledge Management</h3>
                     <p>OMD is a company that offers mobile workforce solutions to various companies such as Culligan and CWS. These companies have service workers that need to fulfill tasks such as repairing or replacing a piece of equipment.</p>
@@ -41,7 +40,9 @@ export default function Page ({ params }: { params: { lang: string } }) {
                     <p>Besides Knowledge management, chatbots can also help companies with customer support. In the case of OMD, customers often need to reschedule appointments for maintenance.</p>
                     <p>For the customers of OMD, this was done over the phone which was a very time-consuming and expensive situation.</p>
                     <p>With the help of a chatbot, customers can now reschedule their appointments themselves. The chatbot is able to understand the customer’s request and then automatically reschedule the appointment. This saves a lot of time for the customers and the company.</p>
+                    <p>The chatbots prompts the customer for the information it needs to make a request to OMD to ask for possible other appointments. With that information the chatbot goes back to the user and asks her, which option she prefers. After the user specifies a preference, the chatbot can go ahead and reschedule the appointment.</p>
                 </section>
+                <Image src={'/omd-appointbot.png'} alt="screenshot of omd-appointbot interface" width={300} height={300} />
             </div>
         </article>
     )

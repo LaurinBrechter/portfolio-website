@@ -148,7 +148,7 @@ const Lang: LangTranslations = {
               title: 'Ausgewählte Fallstudien',
               omd_appointbot: {
                 title: 'OMD Appointbot',
-                subtitle: 'Ein Chatbot, Kunden hilft, Reparaturtermine neu festzulegen.',
+                subtitle: 'Ein Chatbot, der Kunden hilft, Reparaturtermine neu festzulegen.',
                 description: 'Der OMD Appointbot ist ein Chatbot, der auf Large Language Models (LLMs) basiert und Kunden dabei hilft, ihren Termin für Wartungs- und Reparaturarbeiten neu zu planen. Dadurch wird die Zeit die für den Kundenservice benötigt wird, reduziert und die allgemeine Kundenerfahrung verbessert.',
                 benefit: 'Reduzierung der Zeit für den Kundenservice um 80%'
               },

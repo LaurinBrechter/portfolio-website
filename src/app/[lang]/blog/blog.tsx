@@ -23,7 +23,7 @@ let tag_color: { [key: string]: string } = {
   causalpy: "#e8c468",
 };
 
-function BlogEntry(props: {
+export function BlogEntry(props: {
   title: string;
   description: string;
   tags: string[];
