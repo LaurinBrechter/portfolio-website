@@ -3,17 +3,7 @@ import { ContentGraph } from "./ContentGraph";
 import fs from "fs";
 
 const Demos = () => {
-  const graphData = JSON.parse(
-    fs.readFileSync(
-      process.cwd() + "/src/app/[lang]/blog/graphData.json",
-      "utf8"
-    )
-  );
-
-  // const medium_blogs = JSON.parse(fs.readFileSync(process.cwd() + '/src/app/[lang]/blog/medium_blogs.json', 'utf8'));
-  // const own_blogs = JSON.parse(fs.readFileSync(process.cwd() + '/src/app/[lang]/blog/own_blogs.json', 'utf8'));
-
-  // const blogs = medium_blogs.concat(own_blogs);
+  
   const blogs = JSON.parse(
     fs.readFileSync(
       process.cwd() + "/src/app/[lang]/blog/allBlogs.json",
@@ -36,8 +26,8 @@ const Demos = () => {
 
   return (
     <div className="flex items-center justify-center h-[87vh] flex-col">
-      <h1>Demos</h1>
-      <p className="pb-4">Graph based overview over my projects and blogs</p>
+      <h1>Blogs</h1>
+      <p className="pb-4">This is a graph based overview over my blog articles and projects. This is a k-nearest neighbor graph where two nodes are adjacent if one of them is a closest neighbor of the other.</p>
       <ContentGraph graphEdges={graphEdges} graphNodes={graphNodes} blogData={blogs} />
     </div>
   );

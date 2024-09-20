@@ -7,7 +7,7 @@ import {
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
 import { useEffect, useRef, useState } from "react";
-import { BlogEntry } from "./blog";
+import { BlogEntry } from "./Blog";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -103,13 +103,13 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
           cy={(cy) => {
             cyRef.current = cy;
             cy.on("tap", "node", function (evt) {
-              // window.open(evt.target.data().href);
+              window.open(evt.target.data().href);
 
-              const node = evt.target;
-              const data = node.data();
+              // const node = evt.target;
+              // const data = node.data();
 
-              setBlogId(data.id);
-              setBlog(props.blogData[data.id]);
+              // setBlogId(data.id);
+              // setBlog(props.blogData[data.id]);
 
               // window.location.href
             });
@@ -122,14 +122,14 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
                 return;
               }
               cy.$id(evt.target.data().id).data({
-                label: evt.target.data().label + "(hover)",
+                label: evt.target.data().label,
               });
             });
             cy.on("add", "edge", function (evt) {
               const edge = evt.target;
-              console.log(
-                `Edge ID: ${edge.id()}, Width: ${edge.style("width")}`
-              );
+              // console.log(
+              //   `Edge ID: ${edge.id()}, Width: ${edge.style("width")}`
+              // );
             });
           }}
         />
