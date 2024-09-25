@@ -52,7 +52,7 @@ export function CaseStudies(props: {
                       .description
                   }
                 </p>
-                <Link href={'/blog/chatbots/omd-bot'} className="hover:underline underline-offset-4">Zur Case Study</Link>
+                <Link href={'/blog/chatbots/omd-bot'} className="hover:underline underline-offset-4">{localTranslations.home.caseStudies.link}</Link>
               </CardContent>
             </Card>
           </Link>
@@ -92,6 +92,7 @@ export function CaseStudies(props: {
                       .description
                   }
                 </p>
+                <Link href={'/blog/chatbots/omd-bot'} className="hover:underline underline-offset-4">{localTranslations.home.caseStudies.link}</Link>
               </CardContent>
             </Card>
           </Link>
@@ -115,6 +116,7 @@ export function CaseStudies(props: {
                   failures, allowing for proactive maintenance and significantly
                   reducing unplanned downtime.
                 </p>
+                <Link href={'/blog/chatbots/omd-bot'} className="hover:underline underline-offset-4">{localTranslations.home.caseStudies.link}</Link>
               </CardContent>
             </Card>
           </Link>

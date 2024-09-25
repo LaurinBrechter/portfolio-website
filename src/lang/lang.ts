@@ -36,7 +36,8 @@ export type LangTranslations = {
             subtitle: string;
             description: string;
             benefit: string;
-          }
+          },
+          link: string;
         }
         contact: {
           title: string;
@@ -101,7 +102,8 @@ const Lang: LangTranslations = {
                 subtitle: 'Tailoring marketing strategies for different customer groups',
                 description: 'Used clustering algorithms to segment customers based on purchasing behavior, enabling targeted marketing campaigns and personalized experiences.',
                 benefit: '5 distinct customer segments identified'
-              }
+              },
+              link: 'Learn More'
             },
             contact: {
               title: 'Get in Touch',
@@ -157,7 +159,8 @@ const Lang: LangTranslations = {
                 subtitle: 'Anpassung von Marketingstrategien für verschiedene Kundengruppen',
                 description: 'Verwendete Clustering-Algorithmen, um Kunden basierend auf ihrem Kaufverhalten zu segmentieren, was gezielte Marketingkampagnen und personalisierte Erlebnisse ermöglicht.',
                 benefit: '5 verschiedene Kundensegmente identifiziert'
-              }
+              },
+              link: 'Erfahren Sie mehr'
             },
             contact: {
               title: 'Kontaktieren Sie uns',
