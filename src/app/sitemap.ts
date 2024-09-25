@@ -20,18 +20,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             }
         },
         {
-            url: `${base_url}/demos`,
-            lastModified: new Date(),
-            changeFrequency: "daily",
-            priority: 0.9,
-            alternates: {
-                languages: {
-                    en: `${base_url}/en/demos`,
-                    de: `${base_url}/de/demos`
-                }
-            }
-        },
-        {
             url: `${base_url}/blog`,
             lastModified: new Date(),
             changeFrequency: "daily",

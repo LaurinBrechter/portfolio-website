@@ -25,7 +25,7 @@ export default function Page ({ params }: { params: { lang: string } }) {
     return (
         <article className="flex items-center justify-center overflow-y-auto py-20" >
             <div className="flex flex-col w-[800px] max-w-[85%] gap-4 h-full p-3 items-center blog">
-                <h1 className="text-left w-full">Intelligent Chatbots at OMD</h1>
+                <h1 className="text-left w-full">Useful Visualiations for Marketing Analytics</h1>
                 <p>In this article, I have compiled a list of useful visualizations and statistics for marketing/customer analytics. I will provide a short description and explanation for each of them and describe the scenarios in which they are useful. I have tried to focus on charts that are specific to marketing analytics and ones that are more interesting than your standard bar/line/scatter plot.</p>
                 <p>Disclaimer: This article is a work-in-progress and I will add new visualizations and statistics as time goes by (and as I discover them myself). You can find the full code that is used to generate them on my GitHub. Many of the example visualizations are based on synthetic data and some of them have been generated with ChatGPT.</p>
                 <h3>Customer Journey Mapping</h3>
