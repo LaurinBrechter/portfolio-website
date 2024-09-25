@@ -19,6 +19,14 @@ h3 {
   @apply text-2xl font-bold;
 }
 
+.blog h3 {
+  @apply w-full text-left
+}
+/* 
+.blog p {
+  @apply py-2
+} */
+
 h4 {
   @apply text-xl font-bold pt-4
 }

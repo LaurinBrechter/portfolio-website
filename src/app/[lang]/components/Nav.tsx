@@ -13,7 +13,7 @@ import { Link, usePathname } from "@/src/i18n/routing";
 const Nav = () => {
   const routes = [
     // { name: 'About', path: '/about' },
-    { name: "Blog", path: "/demos" },
+    { name: "Blog", path: "/blog" },
     // { name: "Portfolio", path: "/portfolio" },
     // { name: "Blog", path: "/blog" },
     { name: "Testimonials", path: "/testimonials" },

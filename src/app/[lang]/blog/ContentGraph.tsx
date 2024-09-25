@@ -1,5 +1,6 @@
 "use client";
 
+import cytoscape, { Core } from 'cytoscape';
 import CytoscapeComponent from "react-cytoscapejs";
 import {
   ResizableHandle,
@@ -36,11 +37,11 @@ type Node = {
 }
 
 export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; blogData: Blog[] }) => {
-  const [blog, setBlog] = useState<Blog>(props.blogData[0]);
-  const [blogId, setBlogId] = useState<number>(0);
+  // const [blog, setBlog] = useState<Blog>(props.blogData[0]);
+  // const [blogId, setBlogId] = useState<number>(0);
   const [searchQuery, setSearchQuery] = useState<string>("");
 
-  const cyRef = useRef(null);
+  const cyRef = useRef<Core | null>(null);
 
   const filteredBlogs = props.blogData.filter(
     (blog) =>
@@ -62,7 +63,7 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
       filteredGraphNodesIds.includes(edge.data.target)
   )
 
-  const graphData = filteredGraphEdges.concat(filteredGraphNodes);
+  const graphData: (Node | Edge)[] = [...filteredGraphNodes, ...filteredGraphEdges];
 
   useEffect(() => {
     if (cyRef.current) {
