@@ -109,7 +109,7 @@ const Lang: LangTranslations = {
                 title: 'Föderiertes Lernen für Banken',
                 subtitle: 'Datenschutzfreundliche KI für sichere Kontoauszugsanalyse',
                 description: 'Entwickelte ein föderiertes Lernmodell, um Banken zu ermöglichen, Daten sicher zu analysieren, ohne sensible Kundeninformationen offenzulegen.',
-                benefit: '5 verschiedene Kundensegmente identifiziert'
+                benefit: 'precsise parsing of bank statements'
               },
               link: 'Learn More'
             },
@@ -168,7 +168,7 @@ const Lang: LangTranslations = {
                 title: 'Föderales Lernen für Banken',
                 subtitle: 'Sichere Analyse von Bankdaten ohne Offenlegung von Kundendaten',
                 description: 'Entwickelte ein Modell für das föderierte Lernen, um Banken zu ermöglichen, Daten sicher zu analysieren, ohne sensible Kundendaten offenzulegen.',
-                benefit: '5 verschiedene Kundensegmente identifiziert'
+                benefit: 'Präzise Analyse von Bankauszügen'
               },
               link: 'Erfahren Sie mehr'
             },

@@ -37,7 +37,7 @@ export default function HighlightedImageMap() {
     );
   };
 
-  const [cardContent, setCardContent] = useState<undefined | string>(undefined);
+  const [cardContent, setCardContent] = useState('Click on one of the components to see a description');
   const [cardTitle, setCardTitle] = useState<undefined | string>(undefined);
 
   return (
@@ -77,9 +77,9 @@ export default function HighlightedImageMap() {
       </svg>
       {/* <Card className="ml-5 absolute top-0 left-[100%] w-[400px]"> */}
       {cardContent && (
-        <Card className="">
-          <CardHeader>{cardTitle}</CardHeader>
-          <CardContent>{cardContent}</CardContent>
+        <Card className="mt-5 h-[150px]">
+          {/* <CardHeader>{cardTitle}</CardHeader> */}
+          <CardContent className="h-full p-5">{cardContent}</CardContent>
         </Card>
       )}
     </main>

@@ -13,6 +13,7 @@ import {
   DollarSign,
   ExternalLink,
   Timer,
+  Sheet,
 } from "lucide-react";
 
 // const CaseStudies = (props: {locale: string, translations: LangTranslations}) => {
@@ -124,9 +125,12 @@ export function CaseStudies(props: {
               </CardHeader>
               <CardContent>
                 <div className="flex items-center space-x-2 mb-2">
-                  <DollarSign className="h-5 w-5 text-yellow-500" />
+                  <Sheet className="h-5 w-5 text-yellow-500" />
                   <span className="font-semibold text-yellow-500">
-                    $2M annual cost savings
+                    {
+                      localTranslations.home.caseStudies.federated_bank_parsing
+                        .benefit
+                    }
                   </span>
                 </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
