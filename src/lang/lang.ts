@@ -37,6 +37,12 @@ export type LangTranslations = {
             description: string;
             benefit: string;
           },
+          federated_bank_parsing: {
+            title: string,
+            subtitle: string,
+            description: string,
+            benefit: string;
+          },
           link: string;
         }
         contact: {
@@ -71,10 +77,6 @@ const Lang: LangTranslations = {
                   title: 'Data Analysis',
                   description: 'Comprehensive analysis of your data to uncover trends and insights.'
                 },
-                // {
-                //   title: 'Data Visualization',
-                //   description: 'Create compelling visual representations of your data for easy understanding.'
-                // },
                 {
                   title: 'Predictive Modeling',
                   description: 'Develop models to forecast trends and make data-driven decisions.'
@@ -103,6 +105,12 @@ const Lang: LangTranslations = {
                 description: 'Used clustering algorithms to segment customers based on purchasing behavior, enabling targeted marketing campaigns and personalized experiences.',
                 benefit: '5 distinct customer segments identified'
               },
+              federated_bank_parsing: {
+                title: 'Föderiertes Lernen für Banken',
+                subtitle: 'Datenschutzfreundliche KI für sichere Kontoauszugsanalyse',
+                description: 'Entwickelte ein föderiertes Lernmodell, um Banken zu ermöglichen, Daten sicher zu analysieren, ohne sensible Kundeninformationen offenzulegen.',
+                benefit: '5 verschiedene Kundensegmente identifiziert'
+              },
               link: 'Learn More'
             },
             contact: {
@@ -128,10 +136,6 @@ const Lang: LangTranslations = {
                   title: 'Datenanalyse',
                   description: 'Umfassende Analyse Ihrer Daten, um Trends und Erkenntnisse aufzudecken.'
                 },
-                // {
-                //   title: 'Datenvisualisierung',
-                //   description: 'Erstellen überzeugender visueller Darstellungen Ihrer Daten für ein einfaches Verständnis.'
-                // },
                 {
                   title: 'Vorhersagemodellierung',
                   description: 'Entwicklung von Modellen zur Vorhersage von Trends und zur datengesteuerten Entscheidungsfindung.'
@@ -158,6 +162,12 @@ const Lang: LangTranslations = {
                 title: 'Kunden-Segmentierungsanalyse',
                 subtitle: 'Anpassung von Marketingstrategien für verschiedene Kundengruppen',
                 description: 'Verwendete Clustering-Algorithmen, um Kunden basierend auf ihrem Kaufverhalten zu segmentieren, was gezielte Marketingkampagnen und personalisierte Erlebnisse ermöglicht.',
+                benefit: '5 verschiedene Kundensegmente identifiziert'
+              },
+              federated_bank_parsing: {
+                title: 'Föderales Lernen für Banken',
+                subtitle: 'Sichere Analyse von Bankdaten ohne Offenlegung von Kundendaten',
+                description: 'Entwickelte ein Modell für das föderierte Lernen, um Banken zu ermöglichen, Daten sicher zu analysieren, ohne sensible Kundendaten offenzulegen.',
                 benefit: '5 verschiedene Kundensegmente identifiziert'
               },
               link: 'Erfahren Sie mehr'

@@ -15,7 +15,7 @@ export default function Footer() {
           here
         </Link>
       </p>
-      <nav className="flex gap-4 sm:gap-6">
+      {/* <nav className="flex gap-4 sm:gap-6">
         <Link className="text-xs hover:underline underline-offset-4" href="#">
           Terms of Service
         </Link>
@@ -23,7 +23,7 @@ export default function Footer() {
           Privacy
         </Link>
         
-      </nav>
+      </nav> */}
     </footer>
   );
 }

@@ -20,7 +20,7 @@ export default function Page ({ params }: { params: { lang: string } }) {
     const localTranslations = Lang[locale]
     
     return (
-        <article className="flex items-center justify-center overflow-y-auto py-20" >
+        <article className="flex items-center justify-center overflow-y-auto py-20 blog" >
             <div className="flex flex-col w-[600px] max-w-[85%] gap-4 h-full p-3 items-center">
                 <h1 className="text-left w-full">Intelligent Chatbots at OMD</h1>
                 <p>Especially when it comes to “AI”, actions speak louder than words. Together with the people at Optimize My Day GmbH, we created a chatbot that allows users to interact with their documents, retrieve information and build up their knowledge base.</p>

@@ -52,7 +52,12 @@ export function CaseStudies(props: {
                       .description
                   }
                 </p>
-                <Link href={'/blog/chatbots/omd-bot'} className="hover:underline underline-offset-4">{localTranslations.home.caseStudies.link}</Link>
+                <Link
+                  href={"/blog/chatbots/omd-bot"}
+                  className="hover:underline underline-offset-4"
+                >
+                  {localTranslations.home.caseStudies.link}
+                </Link>
               </CardContent>
             </Card>
           </Link>
@@ -92,16 +97,29 @@ export function CaseStudies(props: {
                       .description
                   }
                 </p>
-                <Link href={'/blog/chatbots/omd-bot'} className="hover:underline underline-offset-4">{localTranslations.home.caseStudies.link}</Link>
+                <Link
+                  href={"/blog/marketing-analytics/rfm-analysis"}
+                  className="hover:underline underline-offset-4"
+                >
+                  {localTranslations.home.caseStudies.link}
+                </Link>
               </CardContent>
             </Card>
           </Link>
-          <Link href="/blog/customer-segmentation-analysis" className="group">
+          <Link href="/blog/federated-bank-statement-parsing" className="group">
             <Card className="h-full transition-all duration-200 ease-in-out transform group-hover:scale-105 group-hover:shadow-lg">
               <CardHeader className="pb-2">
-                <CardTitle>Predictive Maintenance Model</CardTitle>
+                <CardTitle>
+                  {
+                    localTranslations.home.caseStudies.federated_bank_parsing
+                      .title
+                  }
+                </CardTitle>
                 <CardDescription>
-                  Reducing downtime in manufacturing processes
+                  {
+                    localTranslations.home.caseStudies.federated_bank_parsing
+                      .subtitle
+                  }
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -112,11 +130,17 @@ export function CaseStudies(props: {
                   </span>
                 </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Developed a machine learning model to predict equipment
-                  failures, allowing for proactive maintenance and significantly
-                  reducing unplanned downtime.
+                  {
+                    localTranslations.home.caseStudies.federated_bank_parsing
+                      .description
+                  }
                 </p>
-                <Link href={'/blog/chatbots/omd-bot'} className="hover:underline underline-offset-4">{localTranslations.home.caseStudies.link}</Link>
+                <Link
+                  href={"/blog/federated-bank-statement-parsing"}
+                  className="hover:underline underline-offset-4"
+                >
+                  {localTranslations.home.caseStudies.link}
+                </Link>
               </CardContent>
             </Card>
           </Link>
