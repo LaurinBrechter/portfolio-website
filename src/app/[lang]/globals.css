@@ -20,13 +20,22 @@ h3 {
 }
 
 .blog h3 {
-  @apply w-full text-left
+  @apply w-full text-left mt-6
 }
 
 .blog p {
   text-align: justify;
   text-justify: inter-word;
   margin-top: 1rem;
+}
+
+.blog-container {
+  @apply flex items-center justify-center overflow-y-auto py-20
+
+}
+
+.blog {
+  @apply flex flex-col w-[800px] max-w-[85%] h-full p-3 items-center 
 }
 
 /* 

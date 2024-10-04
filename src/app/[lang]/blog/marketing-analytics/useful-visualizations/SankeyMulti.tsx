@@ -8,6 +8,7 @@ const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
 export const SankeyMulti = () => {
   // Define the touchpoints
+  const start_points = ["Email Campaign", "Social Media Ad", "Organic Search"];
   const touchpoints = [
     "Landing Page",
     "Product Page",
@@ -16,33 +17,62 @@ export const SankeyMulti = () => {
     "Payment",
   ];
 
-  // Number of users at each touchpoint (example data)
-  const user_flow = [1000, 800, 600, 400, 350];
-  const drop_offs = [0, 200, 200, 200, 50];
+  // Define the flows of users from each starting point through the touchpoints
+  const user_flows = {
+    "Email Campaign": [500, 400, 100, 50, 20],
+    "Social Media Ad": [300, 200, 150, 100, 80],
+    "Organic Search": [200, 150, 100, 70, 60],
+  };
 
-  // Create source and target lists for Sankey diagram
-  const sources = [];
-  const targets = [];
-  const values = [];
+  // Drop-offs for each touchpoint
+  const drop_offs = {
+    "Landing Page": [50, 180, 20],
+    "Product Page": [0, 0, 400],
+    Cart: [30, 20, 10],
+    Checkout: [20, 15, 5],
+  };
 
-  // Populate the sources, targets, and values for continued interactions
-  for (let i = 0; i < touchpoints.length - 1; i++) {
-    sources.push(i);
-    targets.push(i + 1);
-    values.push(user_flow[i + 1]);
-  }
+  // Create source, target, values, and color for the Sankey diagram
+  let sources = [];
+  let targets = [];
+  let values = [];
+  let colors = [];
+  const labels = [
+    ...start_points,
+    ...touchpoints,
+    ...touchpoints.slice(0, -1).map((tp) => `Drop-off after ${tp}`),
+  ];
 
-  // Populate the sources, targets, and values for drop-offs
-  for (let i = 0; i < touchpoints.length - 1; i++) {
-    sources.push(i);
-    targets.push(touchpoints.length + i); // Drop-off nodes
-    values.push(drop_offs[i + 1]);
-  }
+  // Define colors for each source
+  const source_colors = ["#1f77b4", "#ff7f0e", "#2ca02c"]; // Blue, Orange, Green
 
-  // Create labels including drop-off labels
-  const labels = touchpoints.concat(
-    touchpoints.slice(0, -1).map((tp) => `Drop-off after ${tp}`)
-  );
+  // Map starting points to the first touchpoint
+  start_points.forEach((start, i) => {
+    sources.push(i); // Starting points as sources
+    targets.push(start_points.length); // First touchpoint as target
+    values.push(user_flows[start][0]);
+    colors.push(source_colors[i]); // Assign color to the flow
+  });
+
+  // Map flows between touchpoints
+  touchpoints.slice(0, -1).forEach((tp, i) => {
+    start_points.forEach((start, j) => {
+      sources.push(start_points.length + i); // Current touchpoint as source
+      targets.push(start_points.length + i + 1); // Next touchpoint as target
+      values.push(user_flows[start][i + 1]);
+      colors.push(source_colors[j]); // Maintain the same color
+    });
+  });
+
+  // Map drop-offs
+  touchpoints.slice(0, -1).forEach((tp, i) => {
+    start_points.forEach((start, j) => {
+      sources.push(start_points.length + i); // Current touchpoint as source
+      targets.push(start_points.length + touchpoints.length + i); // Drop-off as target
+      values.push(drop_offs[tp][j]);
+      colors.push("rgba(255, 0, 0, 0.4)"); // Drop-offs in semi-transparent red
+    });
+  });
 
   // Define the Sankey diagram
   const data = [
@@ -60,19 +90,18 @@ export const SankeyMulti = () => {
         color: "blue",
       },
       link: {
-        source: sources,
-        target: targets,
-        value: values,
-        color: Array(sources.length)
-          .fill("rgba(31, 119, 180, 0.8)")
-          .concat(Array(drop_offs.length).fill("rgba(255, 0, 0, 0.4)")),
+        source: sources, // Indices of the source nodes
+        target: targets, // Indices of the target nodes
+        value: values, // Number of users flowing between nodes
+        color: colors, // Color for each flow
       },
     },
   ];
 
   // Set the layout of the diagram
   const layout = {
-    title: "Customer Journey with Drop-offs at Each Touchpoint",
+    autosize: true,
+    title: "Multi-Source Customer Journey with Drop-offs",
     font: {
       size: 10,
     },
@@ -80,7 +109,12 @@ export const SankeyMulti = () => {
 
   return (
     <div className="w-full h-full">
-      <Plot data={data} layout={layout} />
+      <Plot
+        data={data}
+        layout={layout}
+        useResizeHandler
+        className="w-full h-full"
+      />
     </div>
   );
 };

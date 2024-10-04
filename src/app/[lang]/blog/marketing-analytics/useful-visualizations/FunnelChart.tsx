@@ -1,10 +1,10 @@
 // @ts-nocheck
 
-"use client"
+"use client";
 
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const Plot = dynamic(() => import('react-plotly.js'), { ssr: false });
+const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
 export const FunnelChart = () => {
   // Define the touchpoints
@@ -43,6 +43,7 @@ export const FunnelChart = () => {
 
   // Set the layout of the funnel chart
   const layout = {
+    autosize: true,
     title: "Customer Journey Funnel with Drop-offs",
     xaxis: { title: "Number of Users" },
     yaxis: {
@@ -56,8 +57,12 @@ export const FunnelChart = () => {
 
   return (
     <div className="w-full h-full">
-        <Plot data={data} layout={layout} />
+      <Plot
+        data={data}
+        layout={layout}
+        useResizeHandler
+        className="w-full h-full"
+      />
     </div>
-  )
-
+  );
 };

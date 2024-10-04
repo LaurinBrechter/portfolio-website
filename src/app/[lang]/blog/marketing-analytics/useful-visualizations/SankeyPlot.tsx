@@ -1,11 +1,10 @@
 // @ts-nocheck
 
-"use client"
+"use client";
 
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const Plot = dynamic(() => import('react-plotly.js'), { ssr: false });
-
+const Plot = dynamic(() => import("react-plotly.js"), { ssr: false });
 
 export const SankeyPlot = () => {
   // Define the touchpoints
@@ -73,6 +72,7 @@ export const SankeyPlot = () => {
 
   // Set the layout of the diagram
   const layout = {
+    autosize: true,
     title: "Customer Journey with Drop-offs at Each Touchpoint",
     font: {
       size: 10,
@@ -80,7 +80,14 @@ export const SankeyPlot = () => {
   };
 
   // Display the Sankey diagram
-  return <div className="w-full h-full">
-    <Plot data={data} layout={layout} />
-  </div>;
+  return (
+    <div className="w-full h-full flex justify-center items-center">
+      <Plot
+        data={data}
+        layout={layout}
+        useResizeHandler
+        className="w-full h-full"
+      />
+    </div>
+  );
 };
