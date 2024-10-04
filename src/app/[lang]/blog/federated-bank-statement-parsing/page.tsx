@@ -15,17 +15,17 @@ export async function generateMetadata({
     };
   } else {
     return {
-      title: 'Analyse von Bankauszügen mithilfe von Federated Learning',
+      title: "Analyse von Bankauszügen mithilfe von Federated Learning",
       description:
-        'Mit Hilfe von Federated Learning konnten wir Transaktionen aus deutschen Bankauszügen extrahieren, ohne die Privatsphäre der Benutzer zu gefährden.',
-    }
+        "Mit Hilfe von Federated Learning konnten wir Transaktionen aus deutschen Bankauszügen extrahieren, ohne die Privatsphäre der Benutzer zu gefährden.",
+    };
   }
 }
 
 export default function Page() {
   return (
-    <article className="flex items-center justify-center overflow-y-auto py-20">
-      <div className="flex flex-col w-[800px] max-w-[85%] gap-4 h-full p-3 items-center">
+    <article className="blog-container">
+      <div className="blog">
         <h1 className="text-left w-full">
           Federated Learning for Bank Statement Parsing
         </h1>
@@ -45,11 +45,10 @@ export default function Page() {
           the data to the server, instead the model comes to the client!
         </p>
         <p>
-          We used this method to solve the task of
-          extracting transactions from German bank statements. Users pass in
-          their scanned bank statements and get out the transactions e.g. as a
-          CSV file. This is clearly highly sensitive data that should not be
-          given away easily.
+          We used this method to solve the task of extracting transactions from
+          German bank statements. Users pass in their scanned bank statements
+          and get out the transactions e.g. as a CSV file. This is clearly
+          highly sensitive data that should not be given away easily.
         </p>
         <p>
           Since this is part of a desktop application, another reason for using

@@ -21,7 +21,9 @@ export async function generateMetadata({
 
 export default function Page({ params }: { params: { lang: string } }) {
   const locale = params.lang ? params.lang : "en";
-  const localTranslations = Lang[locale];
+
+  // responsive plotly charts
+  // https://dev.to/dheerajmurali/building-a-responsive-chart-in-react-with-plotly-js-4on8
 
   return (
     <article className="blog-container">
@@ -38,11 +40,17 @@ export default function Page({ params }: { params: { lang: string } }) {
           interesting than your standard bar/line/scatter plot.
         </p>
         <p>
-          Disclaimer: This article is a work-in-progress and I will add new
-          visualizations and statistics as time goes by (and as I discover them
-          myself). You can find the full code that is used to generate them on
-          my GitHub. Many of the example visualizations are based on synthetic
-          data and some of them have been generated with ChatGPT.
+          <em>
+            Disclaimer: This article is a work-in-progress and I will add new
+            visualizations and statistics as time goes by (and as I discover
+            them myself). You can find the full code that is used to generate
+            them on my{" "}
+            <a href="https://github.com/LaurinBrechter/BayesianInference/blob/main/marketing_visualizations.ipynb">
+              GitHub
+            </a>
+            . Many of the example visualizations are based on synthetic data and
+            some of them have been generated with ChatGPT.
+          </em>
         </p>
         <h3>Customer Journey Mapping</h3>
         <p>
@@ -176,12 +184,14 @@ export default function Page({ params }: { params: { lang: string } }) {
           expensive than retaining the current ones.
         </p>
         <p>
-          Since the following section is part of another notebook/project you
-          can find the code to reproduce the figures{" "}
-          <a href="https://github.com/LaurinBrechter/BayesianInference/blob/main/customer_usage_dynamics.ipynb">
-            here
-          </a>
-          .
+          <em>
+            Since the following section is part of another notebook/project you
+            can find the code to reproduce the figures{" "}
+            <a href="https://github.com/LaurinBrechter/BayesianInference/blob/main/customer_usage_dynamics.ipynb">
+              here
+            </a>
+            .
+          </em>
         </p>
         <p>
           Firstly, we can look at the chart below to get a general feeling for
@@ -218,7 +228,6 @@ export default function Page({ params }: { params: { lang: string } }) {
         <Image
           src={"/blog/useful_viz__customerDynamicsSlopes.webp"}
           alt="Customer Dynamics with Slopes"
-          // layout="responsive"
           width={400}
           height={400}
         />
@@ -227,16 +236,12 @@ export default function Page({ params }: { params: { lang: string } }) {
           customers show an increasing interaction strength and for how many it
           declines.
         </p>
-        {/* <div className="w-[400px] relative"> */}
         <Image
           src={"/blog/useful_viz__slopeDistribution.webp"}
-          // layout="fill"
           alt="Slope distribution"
           width={400}
           height={400}
-          // className="relative"
-          />
-        {/* </div> */}
+        />
         <h3>Customer Segmentation</h3>
         <p>
           In many cases, we don’t know along which dimensions we want to look at
@@ -253,6 +258,13 @@ export default function Page({ params }: { params: { lang: string } }) {
           to specifically target each of these groups.
         </p>
         <ClusterRadarChart />
+        <h3>Further Reading</h3>
+        <p>
+          <a href="https://www.kaggle.com/code/mustafacicek/detailed-marketing-cohort-pareto-rfm-forecast?scriptVersionId=78275259">Detailed Marketing: Cohort, Pareto, RFM, Forecast</a>
+        </p>
+        <p>
+          <a href="https://d1wqtxts1xzle7.cloudfront.net/34976842/Iryna_Kurylets_MT_2011-2012-libre.pdf?1412304702=&response-content-disposition=inline%3B+filename%3DWEB_analytics_and_performance_evaluation.pdf&Expires=1724925488&Signature=Qkl7OibpxgTQ5c7CvivsIg4WQ7PDqrThEV4wkyYKFwnlSaNIw-dbPM8sy%7ERVvzpbRSgJdEnkO8Q9bnawPKLszc%7EEMWAEfhZtfC6ULeKCUF3NKmFRFT1CnL9hSqAUQj%7E-qPXSfL2ftME-evS9%7ECrVzdgcLbemTM4UU0UrqqnCM%7EtTjNaGv5cDn2o2ZQ3K6fbYgiB1z7gSlEDTKvRQUQRapz2Q4ZJ2SZCHY90eSlTZQgGtDPP60ZkDzZiVpB8Vl6lhLeXz6oV4fAcu6EA2pa4YV4IhVzoHUMwwUsbOTvTLq8nmsX9t3ga%7EgHo1ig7alWg1Je7KsUAihBANwfSchPV%7EVw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA">WEB-analytics and performance evaluation of internet marketing</a>
+        </p>
       </div>
     </article>
   );

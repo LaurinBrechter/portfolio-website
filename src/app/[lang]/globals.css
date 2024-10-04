@@ -38,6 +38,10 @@ h3 {
   @apply flex flex-col w-[800px] max-w-[85%] h-full p-3 items-center 
 }
 
+.blog a{
+  @apply text-primary underline decoration-2 underline-offset-2
+}
+
 /* 
 .blog p {
   @apply py-2
