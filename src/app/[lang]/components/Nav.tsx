@@ -1,23 +1,14 @@
 "use client";
 
 import React from "react";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Link, usePathname } from "@/src/i18n/routing";
 
 const Nav = () => {
   const routes = [
     // { name: 'About', path: '/about' },
     { name: "Blog", path: "/blog" },
-    // { name: "Portfolio", path: "/portfolio" },
-    // { name: "Blog", path: "/blog" },
+    { name: "Projects", path: "/projects" },
     { name: "Testimonials", path: "/testimonials" },
-    // { name: 'Services', path: '/services' },
   ];
 
   const pathname = usePathname();
@@ -33,7 +24,7 @@ const Nav = () => {
             <Link
               href={route.path}
               key={route.name}
-              className={`text-sm font-medium hover:underline underline-offset-4}`}
+              className={`text-sm font-medium hover:underline decoration-2 underline-offset-2`}
             >
               {route.name}
             </Link>

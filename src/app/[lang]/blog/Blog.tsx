@@ -56,7 +56,7 @@ export function BlogEntry(props: {
             {props.tags.map((tag) => {
               let color = tag_color[tag];
               return (
-                <Badge key={tag} color={color}>
+                <Badge key={tag} variant="secondary">
                   {tag}
                 </Badge>
               );
