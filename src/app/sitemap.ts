@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
-    const base_url = 'https://laurin-brechter.com';
+    const base_url = 'https://www.laurin-brechter.com';
 
     console.log("base_url", base_url);
 

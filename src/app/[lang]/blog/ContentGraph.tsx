@@ -33,6 +33,7 @@ type Node = {
     id: string;
     label: string;
     href: string;
+    tags: string[];
   };
 }
 
@@ -52,7 +53,8 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
 
   const filteredGraphNodes = props.graphNodes.filter(
     (node) =>
-      node.data.label.toLowerCase().includes(searchQuery.toLowerCase())
+      node.data.label.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      node.data.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase())) 
   );
 
   const filteredGraphNodesIds = filteredGraphNodes.map((node) => node.data.id);
@@ -67,7 +69,7 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
 
   useEffect(() => {
     if (cyRef.current) {
-      const layout = cyRef.current.layout({ name: 'grid' });
+      const layout = cyRef.current.layout({ name: 'circle', animate: true });
       layout.run();
     }
   }, [graphData]);
@@ -78,11 +80,11 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
       direction="horizontal"
       className="h-full w-full border-t"
     >
-      <ResizablePanel defaultSize={50}>
+      <ResizablePanel defaultSize={70}>
         <CytoscapeComponent
           elements={graphData}
           style={{ width: "100%", height: "100%" }}
-          layout={{ name: "grid" }}
+          layout={{ name: "circle", animate: true }}
           stylesheet={[
             {
               selector: "node",
@@ -136,7 +138,7 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
         />
       </ResizablePanel>
       <ResizableHandle withHandle />
-      <ResizablePanel className="p-4 flex flex-col">
+      <ResizablePanel className="p-4 flex flex-col" defaultSize={30}>
         <div className="flex gap-4 pr-4 pb-4">
           <Input
             placeholder="Search Blogs"

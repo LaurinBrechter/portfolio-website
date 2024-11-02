@@ -1,1 +1,108 @@
-[{"title": "Market Basket Analysis Using High Utility Itemset Mining", "link": "https://towardsdatascience.com/market-basket-analysis-using-high-utility-itemset-mining-df233b297c0d?source=rss-4a7fc9f4bfd4------2", "date": "Wed, 11 Sep 2024 16:58:12 GMT", "tags": ["marketing", "market-basket-analysis", "data-mining", "artificial-intelligence", "machine-learning"]}, {"title": "An Introduction to Bayesian A/B Testing", "link": "https://towardsdatascience.com/an-introduction-to-bayesian-a-b-testing-37bb62b0f871?source=rss-4a7fc9f4bfd4------2", "date": "Thu, 05 Sep 2024 17:18:14 GMT", "tags": ["statistics", "marketing-analytics", "a-b-testing", "bayesian-statistics", "machine-learning"]}, {"title": "Useful Visualizations and Statistics for Marketing Analytics", "link": "https://medium.com/@brechterlaurin/useful-visualizations-and-statistics-for-marketing-analytics-58980a9c6d06?source=rss-4a7fc9f4bfd4------2", "date": "Fri, 30 Aug 2024 15:40:15 GMT", "tags": ["marketing-analytics", "python", "visualization", "data-analytics", "matplotlib"]}, {"title": "How to use PostgresDB as your One-Stop RAG Solution", "link": "https://medium.com/@brechterlaurin/how-to-use-postgresdb-as-your-one-stop-rag-solution-8536ef7d762e?source=rss-4a7fc9f4bfd4------2", "date": "Fri, 12 Jan 2024 18:43:56 GMT", "tags": ["postgres", "llm", "vector-database", "ai", "chatgpt"]}, {"title": "Putting Bayesian Models into Production", "link": "https://medium.com/@brechterlaurin/putting-bayesian-models-into-production-1efae307a138?source=rss-4a7fc9f4bfd4------2", "date": "Mon, 28 Aug 2023 15:18:26 GMT", "tags": ["machine-learning", "bayesian-statistics", "data-science"]}, {"title": "Customer Analytics: Pattern Mining on Clickstream Data in Python", "link": "https://medium.com/@brechterlaurin/customer-analytics-pattern-mining-on-clickstream-data-in-python-1bcd2de15a5d?source=rss-4a7fc9f4bfd4------2", "date": "Mon, 21 Aug 2023 15:36:28 GMT", "tags": ["data-science", "artificial-intelligence", "frequent-pattern-mining", "data-mining", "marketing-analytics"]}, {"title": "A Data-driven, Bayesian Approach to the Critical Path Method", "link": "https://medium.com/@brechterlaurin/a-data-driven-bayesian-approach-to-the-critical-path-method-26fd7905e85b?source=rss-4a7fc9f4bfd4------2", "date": "Mon, 14 Aug 2023 16:06:01 GMT", "tags": ["data-science", "operations-research", "bayesian-statistics", "project-management"]}, {"title": "Applying the Bayesian Gamma-gamma Model for Customer Lifetime Valuation", "link": "https://medium.com/@brechterlaurin/applying-the-bayesian-gamma-gamma-model-for-customer-lifetime-valuation-aee88e7d2bbb?source=rss-4a7fc9f4bfd4------2", "date": "Sat, 12 Aug 2023 15:47:33 GMT", "tags": ["machine-learning", "bayesian-statistics", "data-science", "marketing-analytics"]}, {"title": "Material Flow Simulation and Optimization with SimPy", "link": "https://python.plainenglish.io/material-flow-simulation-and-optimization-with-simpy-8c3abf48cc21?source=rss-4a7fc9f4bfd4------2", "date": "Tue, 08 Aug 2023 11:14:02 GMT", "tags": ["data-science", "machine-learning", "simulation", "python", "operations-research"]}, {"title": "A Bayesian Approach to Customer Lifetime Valuation", "link": "https://medium.com/@brechterlaurin/a-bayesian-approach-to-customer-lifetime-valuation-cd0cde6ee105?source=rss-4a7fc9f4bfd4------2", "date": "Sun, 30 Jul 2023 16:26:29 GMT", "tags": ["bayesian-inference", "marketing", "customer-lifetime-value", "marketing-analytics", "statistics"]}]
+[
+  {
+    "title": "Self-Service ML with Relational Deep Learning",
+    "link": "https://towardsdatascience.com/self-service-ml-with-relational-deep-learning-beb693a21d5b?source=rss-4a7fc9f4bfd4------2",
+    "date": "Tue, 22 Oct 2024 17:42:56 GMT",
+    "tags": [
+      "machine-learning",
+      "deep-learning",
+      "artificial-intelligence",
+      "relational-databases",
+      "data-science"
+    ]
+  },
+  {
+    "title": "Market Basket Analysis Using High Utility Itemset Mining",
+    "link": "https://towardsdatascience.com/market-basket-analysis-using-high-utility-itemset-mining-df233b297c0d?source=rss-4a7fc9f4bfd4------2",
+    "date": "Wed, 11 Sep 2024 16:58:12 GMT",
+    "tags": [
+      "marketing",
+      "market-basket-analysis",
+      "data-mining",
+      "artificial-intelligence",
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "An Introduction to Bayesian A/B Testing",
+    "link": "https://towardsdatascience.com/an-introduction-to-bayesian-a-b-testing-37bb62b0f871?source=rss-4a7fc9f4bfd4------2",
+    "date": "Thu, 05 Sep 2024 17:18:14 GMT",
+    "tags": [
+      "statistics",
+      "marketing-analytics",
+      "a-b-testing",
+      "bayesian-statistics",
+      "machine-learning"
+    ]
+  },
+  {
+    "title": "Useful Visualizations and Statistics for Marketing Analytics",
+    "link": "https://medium.com/@brechterlaurin/useful-visualizations-and-statistics-for-marketing-analytics-58980a9c6d06?source=rss-4a7fc9f4bfd4------2",
+    "date": "Fri, 30 Aug 2024 15:40:15 GMT",
+    "tags": [
+      "marketing-analytics",
+      "python",
+      "visualization",
+      "data-analytics",
+      "matplotlib"
+    ]
+  },
+  {
+    "title": "How to use PostgresDB as your One-Stop RAG Solution",
+    "link": "https://medium.com/@brechterlaurin/how-to-use-postgresdb-as-your-one-stop-rag-solution-8536ef7d762e?source=rss-4a7fc9f4bfd4------2",
+    "date": "Fri, 12 Jan 2024 18:43:56 GMT",
+    "tags": ["postgres", "llm", "vector-database", "ai", "chatgpt"]
+  },
+  {
+    "title": "Putting Bayesian Models into Production",
+    "link": "https://medium.com/@brechterlaurin/putting-bayesian-models-into-production-1efae307a138?source=rss-4a7fc9f4bfd4------2",
+    "date": "Mon, 28 Aug 2023 15:18:26 GMT",
+    "tags": ["machine-learning", "bayesian-statistics", "data-science"]
+  },
+  {
+    "title": "Customer Analytics: Pattern Mining on Clickstream Data in Python",
+    "link": "https://medium.com/@brechterlaurin/customer-analytics-pattern-mining-on-clickstream-data-in-python-1bcd2de15a5d?source=rss-4a7fc9f4bfd4------2",
+    "date": "Mon, 21 Aug 2023 15:36:28 GMT",
+    "tags": [
+      "data-science",
+      "artificial-intelligence",
+      "frequent-pattern-mining",
+      "data-mining",
+      "marketing-analytics"
+    ]
+  },
+  {
+    "title": "A Data-driven, Bayesian Approach to the Critical Path Method",
+    "link": "https://medium.com/@brechterlaurin/a-data-driven-bayesian-approach-to-the-critical-path-method-26fd7905e85b?source=rss-4a7fc9f4bfd4------2",
+    "date": "Mon, 14 Aug 2023 16:06:01 GMT",
+    "tags": [
+      "data-science",
+      "operations-research",
+      "bayesian-statistics",
+      "project-management"
+    ]
+  },
+  {
+    "title": "Applying the Bayesian Gamma-gamma Model for Customer Lifetime Valuation",
+    "link": "https://medium.com/@brechterlaurin/applying-the-bayesian-gamma-gamma-model-for-customer-lifetime-valuation-aee88e7d2bbb?source=rss-4a7fc9f4bfd4------2",
+    "date": "Sat, 12 Aug 2023 15:47:33 GMT",
+    "tags": [
+      "machine-learning",
+      "bayesian-statistics",
+      "data-science",
+      "marketing-analytics"
+    ]
+  },
+  {
+    "title": "Material Flow Simulation and Optimization with SimPy",
+    "link": "https://python.plainenglish.io/material-flow-simulation-and-optimization-with-simpy-8c3abf48cc21?source=rss-4a7fc9f4bfd4------2",
+    "date": "Tue, 08 Aug 2023 11:14:02 GMT",
+    "tags": [
+      "data-science",
+      "machine-learning",
+      "simulation",
+      "python",
+      "operations-research"
+    ]
+  }
+]

@@ -1,5 +1,4 @@
 
-import random from 'random'
 import { GammaChart } from "./GammaChart";
 
 function drawGamma(shape: number, scale: number): number {
