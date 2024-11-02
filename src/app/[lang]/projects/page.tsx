@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/src/components/ui/button";
 import {
   Card,
   CardContent,
@@ -6,8 +6,8 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+} from "@/src/components/ui/card";
+import { Badge } from "@/src/components/ui/badge";
 import { Github, ExternalLink } from "lucide-react";
 import Link from "next/link";
 

@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/src/components/ui/button"
 // import { Input } from "@/components/ui/input"
 import { BarChart, PieChart, LineChart, Database, Bot, ExternalLink, TrendingUp, Users, DollarSign, Github, Linkedin, FileText } from "lucide-react"
 // import {unstable_setRequestLocale} from 'next-intl/server';

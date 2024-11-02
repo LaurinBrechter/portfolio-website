@@ -6,11 +6,11 @@ import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/components/ui/resizable";
+} from "@/src/components/ui/resizable";
 import { useEffect, useRef, useState } from "react";
 import { BlogEntry } from "./Blog";
-import { Input } from "@/components/ui/input";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { Input } from "@/src/components/ui/input";
+import { ScrollArea } from "@/src/components/ui/scroll-area";
 
 type Blog = {
   title: string;

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Card, CardContent } from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Card, CardContent } from "@/src/components/ui/card"
+import { Avatar, AvatarFallback, AvatarImage } from "@/src/components/ui/avatar"
 import Lang from '@/src/lang/lang'
 import { Link } from '@/src/i18n/routing'
 // import { useRouter } from 'next/router'

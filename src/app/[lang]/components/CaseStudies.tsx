@@ -4,7 +4,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@/src/components/ui/card";
 import { Link } from "@/src/i18n/routing";
 import { LangTranslations } from "@/src/lang/lang";
 import {

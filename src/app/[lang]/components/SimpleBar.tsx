@@ -1,7 +1,7 @@
 "use client"
  
 import { Bar, BarChart } from "recharts"
-import { ChartConfig, ChartContainer } from "@/components/ui/chart"
+import { ChartConfig, ChartContainer } from "@/src/components/ui/chart"
  
 const chartData = [
   { browser: "chrome", visitors: 275, fill: "var(--color-chrome)" },
