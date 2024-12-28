@@ -1,10 +1,7 @@
 "use client";
 
 import { Badge } from "@/src/components/ui/badge";
-import { Button } from "@/src/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card";
-import { Input } from "@/src/components/ui/input";
-import { ScrollArea } from "@/src/components/ui/scroll-area";
 import { Link } from "@/src/i18n/routing";
 import Image from "next/image";
 import React, { useState } from "react";

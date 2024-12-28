@@ -1,7 +1,10 @@
 "use client";
 
 import React from "react";
-import { Link, usePathname } from "@/src/i18n/routing";
+import { Link, usePathname, useRouter } from "@/src/i18n/routing";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Button } from "@/src/components/ui/button";
+import { ChevronDownIcon, GlobeIcon } from "lucide-react";
 
 const Nav = () => {
   const routes = [
@@ -12,6 +15,8 @@ const Nav = () => {
   ];
 
   const pathname = usePathname();
+
+  const router = useRouter();
 
   return (
     <header className="px-4 lg:px-6 h-[7vh] flex items-center sticky top-0 bg-white z-10">
@@ -30,31 +35,27 @@ const Nav = () => {
             </Link>
           );
         })}
-        {/* <Select name='locale'>
-        <SelectTrigger>
-          <SelectValue placeholder="English" />
-        </SelectTrigger>
-        <SelectContent>
-        <Link locale='de' href={'/blog'}><SelectItem value="de">de</SelectItem></Link>
-            <SelectItem value="en"><Link locale='en' href={'/'}>en</Link></SelectItem>
-        </SelectContent>
-        </Select> */}
-        <div className="flex items-center pl-2 flex-col">
-          <Link
-            locale="de"
-            href={pathname}
-            className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-          >
-            de
-          </Link>
-          <Link
-            locale="en"
-            href={pathname}
-            className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-          >
-            en
-          </Link>
-        </div>
+        <Popover>
+          <PopoverTrigger asChild>
+            <Button variant="outline" className="flex items-center gap-2">
+              <GlobeIcon className="h-5 w-5" />
+              {/* <span>🌐</span> */}
+              <ChevronDownIcon className="h-4 w-4" />
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent className="p-2 flex">
+              <Button variant="ghost" className="justify-start" onClick={() => {
+                router.push(pathname, { locale: 'de' });
+              }}>
+                🇩🇪
+              </Button>
+              <Button variant="ghost" className="justify-start" onClick={() => {
+                router.push(pathname, { locale: 'en' });
+              }}>
+                🇬🇧
+              </Button>
+          </PopoverContent>
+        </Popover>
       </nav>
     </header>
   );

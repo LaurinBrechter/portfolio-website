@@ -9,27 +9,23 @@ import {
 } from "@/src/components/ui/card";
 import { Badge } from "@/src/components/ui/badge";
 import { Github, ExternalLink } from "lucide-react";
-import Link from "next/link";
 
 export default function Projects() {
   const projects = [
     {
-      title: "Sales Prediction Model",
+      title: "Tab Transcribe",
       description:
-        "Developed a machine learning model to forecast sales for a retail company, improving inventory management and reducing costs.",
+        "A chrome extension that uses openai whisper to transcribe the audio from any tab. The extension runs fully client side without any third party services.",
       image: "/placeholder.svg?height=200&width=400",
-      tags: ["Python", "Scikit-learn", "Pandas", "Time Series Analysis"],
-      githubLink: "https://github.com/yourusername/sales-prediction",
-      liveLink: "https://example.com/sales-prediction-demo",
+      tags: ["Typescript", "OpenAI", "Whisper", "Chrome Extension"],
+      githubLink: "https://github.com/LaurinBrechter/tab-transcribe",
     },
     {
-      title: "Customer Churn Analysis Dashboard",
-      description:
-        "Created an interactive dashboard to visualize customer churn patterns and identify key factors influencing customer retention.",
+      title: "pamidb",
+      description: "A specialized database written in rust for pattern mining.",
       image: "/placeholder.svg?height=200&width=400",
-      tags: ["R", "Shiny", "ggplot2", "dplyr"],
-      githubLink: "https://github.com/yourusername/churn-analysis-dashboard",
-      liveLink: "https://example.com/churn-dashboard",
+      tags: ["Rust", "Pattern Mining", "Database"],
+      githubLink: "https://github.com/LaurinBrechter/pamidb",
     },
     {
       title: "Sentiment Analysis of Product Reviews",
@@ -52,44 +48,45 @@ export default function Projects() {
   ];
 
   return (
-      <main className="flex-1">
-        <section className="w-full py-12">
-          <div className="container px-4 md:px-6">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-8">
-              My Projects
-            </h1>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {projects.map((project, index) => (
-                <Card key={index} className="flex flex-col">
-                  <CardHeader>
-                    <img
+    <main className="flex-1">
+      <section className="w-full py-12">
+        <div className="container px-4 md:px-6">
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-8">
+            My Projects
+          </h1>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.map((project, index) => (
+              <Card key={index} className="flex flex-col">
+                <CardHeader>
+                  {/* <img
                       src={project.image}
                       alt={project.title}
                       className="w-full h-48 object-cover rounded-t-lg"
-                    />
-                    <CardTitle>{project.title}</CardTitle>
-                    <CardDescription>{project.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-1">
-                    <div className="flex flex-wrap gap-2">
-                      {project.tags.map((tag, tagIndex) => (
-                        <Badge key={tagIndex} variant="secondary">
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
-                  </CardContent>
-                  <CardFooter className="flex justify-between">
-                    <Button variant="outline" asChild>
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="w-4 h-4 mr-2" />
-                        GitHub
-                      </a>
-                    </Button>
+                    /> */}
+                  <CardTitle>{project.title}</CardTitle>
+                  <CardDescription>{project.description}</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-1">
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag, tagIndex) => (
+                      <Badge key={tagIndex} variant="secondary">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+                <CardFooter className="flex justify-between">
+                  <Button variant="outline" asChild>
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="w-4 h-4 mr-2" />
+                      GitHub
+                    </a>
+                  </Button>
+                  {project.liveLink && (
                     <Button asChild>
                       <a
                         href={project.liveLink}
@@ -100,12 +97,13 @@ export default function Projects() {
                         Live Demo
                       </a>
                     </Button>
-                  </CardFooter>
-                </Card>
-              ))}
-            </div>
+                  )}
+                </CardFooter>
+              </Card>
+            ))}
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
   );
 }

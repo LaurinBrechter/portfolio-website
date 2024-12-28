@@ -1,6 +1,6 @@
 "use client";
 
-import cytoscape, { Core } from 'cytoscape';
+import { Core } from 'cytoscape';
 import CytoscapeComponent from "react-cytoscapejs";
 import {
   ResizableHandle,
