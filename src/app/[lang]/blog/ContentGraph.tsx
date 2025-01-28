@@ -1,6 +1,7 @@
+// @ts-nocheck
 "use client";
 
-import { Core } from 'cytoscape';
+import { Core } from "cytoscape";
 import CytoscapeComponent from "react-cytoscapejs";
 import {
   ResizableHandle,
@@ -26,7 +27,7 @@ type Edge = {
     source: string;
     target: string;
   };
-}
+};
 
 type Node = {
   data: {
@@ -35,9 +36,13 @@ type Node = {
     href: string;
     tags: string[];
   };
-}
+};
 
-export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; blogData: Blog[] }) => {
+export const ContentGraph = (props: {
+  graphNodes: Node[];
+  graphEdges: Edge[];
+  blogData: Blog[];
+}) => {
   // const [blog, setBlog] = useState<Blog>(props.blogData[0]);
   // const [blogId, setBlogId] = useState<number>(0);
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -47,14 +52,18 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
   const filteredBlogs = props.blogData.filter(
     (blog) =>
       blog.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      blog.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
-      // blog.description.toLowerCase().includes(searchQuery.toLowerCase()
+      blog.tags.some((tag) =>
+        tag.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    // blog.description.toLowerCase().includes(searchQuery.toLowerCase()
   );
 
   const filteredGraphNodes = props.graphNodes.filter(
     (node) =>
       node.data.label.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      node.data.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase())) 
+      node.data.tags.some((tag) =>
+        tag.toLowerCase().includes(searchQuery.toLowerCase())
+      )
   );
 
   const filteredGraphNodesIds = filteredGraphNodes.map((node) => node.data.id);
@@ -63,17 +72,19 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
     (edge) =>
       filteredGraphNodesIds.includes(edge.data.source) &&
       filteredGraphNodesIds.includes(edge.data.target)
-  )
+  );
 
-  const graphData: (Node | Edge)[] = [...filteredGraphNodes, ...filteredGraphEdges];
+  const graphData: (Node | Edge)[] = [
+    ...filteredGraphNodes,
+    ...filteredGraphEdges,
+  ];
 
   useEffect(() => {
     if (cyRef.current) {
-      const layout = cyRef.current.layout({ name: 'circle', animate: true });
+      const layout = cyRef.current.layout({ name: "circle", animate: true });
       layout.run();
     }
   }, [graphData]);
-
 
   return (
     <ResizablePanelGroup
@@ -145,13 +156,9 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-          {/* <Button>Search</Button>
-          <Link href={"/blog/overview"}>
-            <Button>Graph</Button>
-          </Link> */}
         </div>
         <ScrollArea className="pr-4">
-          <div className="h-1/2 flex flex-col gap-3">
+          <div className="flex flex-col gap-3">
             {filteredBlogs.map((blog) => {
               return (
                 <BlogEntry

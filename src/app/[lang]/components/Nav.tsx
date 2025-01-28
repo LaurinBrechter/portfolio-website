@@ -2,16 +2,25 @@
 
 import React from "react";
 import { Link, usePathname, useRouter } from "@/src/i18n/routing";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import { Button } from "@/src/components/ui/button";
 import { ChevronDownIcon, GlobeIcon } from "lucide-react";
+import Lang from "@/src/lang/lang";
 
-const Nav = () => {
+const Nav = ({ locale }: { locale: string }) => {
+  const localTranslations = Lang[locale];
+
+  console.log(locale)
+
   const routes = [
     // { name: 'About', path: '/about' },
-    { name: "Blog", path: "/blog" },
-    { name: "Projects", path: "/projects" },
-    { name: "Testimonials", path: "/testimonials" },
+    { name: localTranslations.home.nav.blog, path: "/blog" },
+    { name: localTranslations.home.nav.projects, path: "/projects" },
+    { name: localTranslations.home.nav.testimonials, path: "/testimonials" },
   ];
 
   const pathname = usePathname();
@@ -37,23 +46,31 @@ const Nav = () => {
         })}
         <Popover>
           <PopoverTrigger asChild>
-            <Button variant="outline" className="flex items-center gap-2">
-              <GlobeIcon className="h-5 w-5" />
+            <Button variant="outline" className="flex items-center gap-2 p-2 py-1 h-8">
+              <GlobeIcon className="h-4 w-4" />
               {/* <span>🌐</span> */}
               <ChevronDownIcon className="h-4 w-4" />
             </Button>
           </PopoverTrigger>
-          <PopoverContent className="p-2 flex">
-              <Button variant="ghost" className="justify-start" onClick={() => {
-                router.push(pathname, { locale: 'de' });
-              }}>
-                🇩🇪
-              </Button>
-              <Button variant="ghost" className="justify-start" onClick={() => {
-                router.push(pathname, { locale: 'en' });
-              }}>
-                🇬🇧
-              </Button>
+          <PopoverContent className="p-0 flex flex-col">
+            <Button
+              variant="ghost"
+              className="justify-start"
+              onClick={() => {
+                router.push(pathname, { locale: "de", scroll: false });
+              }}
+            >
+              🇩🇪
+            </Button>
+            <Button
+              variant="ghost"
+              className="justify-start"
+              onClick={() => {
+                router.push(pathname, { locale: "en", scroll: false });
+              }}
+            >
+              🇬🇧
+            </Button>
           </PopoverContent>
         </Popover>
       </nav>

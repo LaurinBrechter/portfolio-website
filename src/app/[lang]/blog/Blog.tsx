@@ -3,7 +3,6 @@
 import { Badge } from "@/src/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card";
 import { Link } from "@/src/i18n/routing";
-import Image from "next/image";
 import React, { useState } from "react";
 
 let tag_color: { [key: string]: string } = {
@@ -28,43 +27,32 @@ export function BlogEntry(props: {
   date: string;
 }) {
   return (
-    <Card className="flex">
-      {/* <div className='h-[200px] w-[200px]'> */}
-      <Image
-        src="/blog/causal_inf_causal_py.webp"
-        width={200}
-        height={200}
-        alt="cool"
-        className="p-4 object-contain"
-      />
-      {/* </div> */}
-      <div>
-        <CardHeader className="flex text-left">
-          <CardTitle>
-            {props.link ? (
-              <Link href={props.link} className="hover:underline">
-                {props.title}
-              </Link>
-            ) : (
-              props.title
-            )}
-          </CardTitle>
-          <div className="flex gap-2">
-            {props.tags.map((tag) => {
-              let color = tag_color[tag];
-              return (
-                <Badge key={tag} variant="secondary">
-                  {tag}
-                </Badge>
-              );
-            })}
-          </div>
-        </CardHeader>
-        <CardContent className="flex text-left">
-          {props.description}
-          {props.date}
-        </CardContent>
-      </div>
+    <Card>
+      <CardHeader>
+        <CardTitle>
+          {props.link ? (
+            <Link href={props.link} className="hover:underline">
+              {props.title}
+            </Link>
+          ) : (
+            props.title
+          )}
+        </CardTitle>
+        <div className="flex flex-wrap gap-2">
+          {props.tags.map((tag) => {
+            let color = tag_color[tag];
+            return (
+              <Badge key={tag} variant="secondary">
+                {tag}
+              </Badge>
+            );
+          })}
+        </div>
+      </CardHeader>
+      <CardContent className="flex flex-col text-left">
+        {props.description}
+        <span className="text-sm text-muted-foreground mt-4">{props.date}</span>
+      </CardContent>
     </Card>
   );
 }

@@ -1,5 +1,7 @@
 import { Button } from "@/src/components/ui/button";
-// import { Input } from "@/components/ui/input"
+
+// https://www.realtimecolors.com/?colors=14181f-eef1f6-223b68-7da2e3-1a5dd1&fonts=Inter-Inter
+
 import {
   BarChart,
   PieChart,
@@ -14,23 +16,19 @@ import {
   Linkedin,
   FileText,
 } from "lucide-react";
-// import {unstable_setRequestLocale} from 'next-intl/server';
 import Lang from "@/src/lang/lang";
 import { Link } from "@/src/i18n/routing";
 import CalendlyInline from "./components/CalendlyInline";
-// import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { CaseStudies } from "./components/CaseStudies";
 import Image from "next/image";
 
 export default function Home({ params }: { params: { lang: string } }) {
-  // unstable_setRequestLocale(params.lang);
 
   const locale = params.lang ? params.lang : "en";
   const localTranslations = Lang[locale];
 
   const icons = [
     <BarChart className="h-12 w-12 mb-4 text-primary" />,
-    // <PieChart className="h-12 w-12 mb-4 text-primary" />,
     <LineChart className="h-12 w-12 mb-4 text-primary" />,
     <Bot className="h-12 w-12 mb-4 text-primary" />,
   ];

@@ -4,6 +4,9 @@
 
 #welcome-container {
   background-image: url('/background_gaussian_medium.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -163,3 +166,9 @@ ol {
     @apply bg-background text-foreground;
   }
 }
+
+/* body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}  */

@@ -9,8 +9,17 @@ import {
 } from "@/src/components/ui/card";
 import { Badge } from "@/src/components/ui/badge";
 import { Github, ExternalLink } from "lucide-react";
+import Lang from "@/src/lang/lang";
 
-export default function Projects() {
+
+export default function ProjectsPage({
+  params,
+}: {
+  params: { lang: string };
+}) {
+  const locale = params.lang ? params.lang : "en";
+  const localTranslations = Lang[locale];
+
   const projects = [
     {
       title: "Tab Transcribe",
@@ -48,11 +57,10 @@ export default function Projects() {
   ];
 
   return (
-    <main className="flex-1">
-      <section className="w-full py-12">
+      <section className="w-full py-12 min-h-[87vh]">
         <div className="container px-4 md:px-6">
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none mb-8">
-            My Projects
+          <h1 className="font-bold tracking-tighter mb-8">
+            {localTranslations.projects.title}
           </h1>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
@@ -104,6 +112,5 @@ export default function Projects() {
           </div>
         </div>
       </section>
-    </main>
   );
 }
