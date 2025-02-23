@@ -26,7 +26,7 @@ const Demos = () => {
   return (
     <div className="flex items-center justify-center h-[87vh] flex-col">
       <h1>Blogs</h1>
-      <p className="pb-4">
+      <p className="pb-4 text-muted-foreground">
         This is a graph based overview over my blog articles and projects. This
         is a k-nearest neighbor graph where two nodes are adjacent if one of
         them is a closest neighbor of the other.

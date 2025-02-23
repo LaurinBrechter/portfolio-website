@@ -27,7 +27,7 @@ export function BlogEntry(props: {
   date: string;
 }) {
   return (
-    <Card>
+    <Card className="relative">
       <CardHeader>
         <CardTitle>
           {props.link ? (
@@ -40,7 +40,6 @@ export function BlogEntry(props: {
         </CardTitle>
         <div className="flex flex-wrap gap-2">
           {props.tags.map((tag) => {
-            let color = tag_color[tag];
             return (
               <Badge key={tag} variant="secondary">
                 {tag}
@@ -51,8 +50,10 @@ export function BlogEntry(props: {
       </CardHeader>
       <CardContent className="flex flex-col text-left">
         {props.description}
-        <span className="text-sm text-muted-foreground mt-4">{props.date}</span>
       </CardContent>
+      <span className="text-sm text-muted-foreground absolute bottom-2 right-2">
+        {new Date(props.date).toLocaleDateString()}
+      </span>
     </Card>
   );
 }
