@@ -135,7 +135,7 @@ export function  AttributionChart() {
               tickLine={false}
               tickMargin={10}
               axisLine={false}
-              tickFormatter={(value) =>
+              tickFormatter={(value: string) =>
                 chartConfig[value as keyof typeof chartConfig]?.label
               }
             />
@@ -149,7 +149,7 @@ export function  AttributionChart() {
               tickMargin={10}
               axisLine={false}
               domain={[0, 1]}
-              tickFormatter={(value) => `${(value * 100).toFixed(0)}%`}
+              tickFormatter={(value: number) => `${(value * 100).toFixed(0)}%`}
             />
             <Bar
               dataKey="attribution"
