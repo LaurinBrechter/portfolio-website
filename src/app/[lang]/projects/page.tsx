@@ -11,8 +11,13 @@ import { Badge } from "@/src/components/ui/badge";
 import { Github, ExternalLink } from "lucide-react";
 import Lang from "@/src/lang/lang";
 
-export default function ProjectsPage({ params }: { params: { lang: string } }) {
-  const locale = params.lang ? params.lang : "en";
+export default async function ProjectsPage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const paramsResolved = await params;
+  const locale = paramsResolved.lang ? paramsResolved.lang : "en";
   const localTranslations = Lang[locale];
 
   const projects = [

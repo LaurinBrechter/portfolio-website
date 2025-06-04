@@ -10,21 +10,28 @@ import ClusterRadarChart from "./ClusterRadardChart";
 export async function generateMetadata({
   params,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
   return {
-    title: "Marketing Analytics Visualizations: Essential Charts & Dashboards Guide",
-    description: "Discover key marketing analytics visualizations including funnel charts, Sankey diagrams, Pareto analysis, and customer journey mapping. Learn how to leverage these powerful charts for better marketing decisions and customer insights.",
-    keywords: "marketing analytics, data visualization, funnel charts, Sankey diagrams, customer journey mapping, Pareto analysis, marketing metrics, customer segmentation",
+    title:
+      "Marketing Analytics Visualizations: Essential Charts & Dashboards Guide",
+    description:
+      "Discover key marketing analytics visualizations including funnel charts, Sankey diagrams, Pareto analysis, and customer journey mapping. Learn how to leverage these powerful charts for better marketing decisions and customer insights.",
+    keywords:
+      "marketing analytics, data visualization, funnel charts, Sankey diagrams, customer journey mapping, Pareto analysis, marketing metrics, customer segmentation",
     openGraph: {
-      title: "Marketing Analytics Visualizations: Essential Charts & Dashboards Guide",
-      description: "Discover key marketing analytics visualizations including funnel charts, Sankey diagrams, Pareto analysis, and customer journey mapping.",
+      title:
+        "Marketing Analytics Visualizations: Essential Charts & Dashboards Guide",
+      description:
+        "Discover key marketing analytics visualizations including funnel charts, Sankey diagrams, Pareto analysis, and customer journey mapping.",
       type: "article",
     },
   };
 }
 
-export default async function Page(props: { params: Promise<{ lang: string }> }) {
+export default async function Page(props: {
+  params: Promise<{ lang: string }>;
+}) {
   const params = await props.params;
   const locale = params.lang ? params.lang : "en";
 
@@ -266,10 +273,14 @@ export default async function Page(props: { params: Promise<{ lang: string }> })
         <ClusterRadarChart />
         <h3>Further Reading</h3>
         <p>
-          <a href="https://www.kaggle.com/code/mustafacicek/detailed-marketing-cohort-pareto-rfm-forecast?scriptVersionId=78275259">Detailed Marketing: Cohort, Pareto, RFM, Forecast</a>
+          <a href="https://www.kaggle.com/code/mustafacicek/detailed-marketing-cohort-pareto-rfm-forecast?scriptVersionId=78275259">
+            Detailed Marketing: Cohort, Pareto, RFM, Forecast
+          </a>
         </p>
         <p>
-          <a href="https://d1wqtxts1xzle7.cloudfront.net/34976842/Iryna_Kurylets_MT_2011-2012-libre.pdf?1412304702=&response-content-disposition=inline%3B+filename%3DWEB_analytics_and_performance_evaluation.pdf&Expires=1724925488&Signature=Qkl7OibpxgTQ5c7CvivsIg4WQ7PDqrThEV4wkyYKFwnlSaNIw-dbPM8sy%7ERVvzpbRSgJdEnkO8Q9bnawPKLszc%7EEMWAEfhZtfC6ULeKCUF3NKmFRFT1CnL9hSqAUQj%7E-qPXSfL2ftME-evS9%7ECrVzdgcLbemTM4UU0UrqqnCM%7EtTjNaGv5cDn2o2ZQ3K6fbYgiB1z7gSlEDTKvRQUQRapz2Q4ZJ2SZCHY90eSlTZQgGtDPP60ZkDzZiVpB8Vl6lhLeXz6oV4fAcu6EA2pa4YV4IhVzoHUMwwUsbOTvTLq8nmsX9t3ga%7EgHo1ig7alWg1Je7KsUAihBANwfSchPV%7EVw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA">WEB-analytics and performance evaluation of internet marketing</a>
+          <a href="https://d1wqtxts1xzle7.cloudfront.net/34976842/Iryna_Kurylets_MT_2011-2012-libre.pdf?1412304702=&response-content-disposition=inline%3B+filename%3DWEB_analytics_and_performance_evaluation.pdf&Expires=1724925488&Signature=Qkl7OibpxgTQ5c7CvivsIg4WQ7PDqrThEV4wkyYKFwnlSaNIw-dbPM8sy%7ERVvzpbRSgJdEnkO8Q9bnawPKLszc%7EEMWAEfhZtfC6ULeKCUF3NKmFRFT1CnL9hSqAUQj%7E-qPXSfL2ftME-evS9%7ECrVzdgcLbemTM4UU0UrqqnCM%7EtTjNaGv5cDn2o2ZQ3K6fbYgiB1z7gSlEDTKvRQUQRapz2Q4ZJ2SZCHY90eSlTZQgGtDPP60ZkDzZiVpB8Vl6lhLeXz6oV4fAcu6EA2pa4YV4IhVzoHUMwwUsbOTvTLq8nmsX9t3ga%7EgHo1ig7alWg1Je7KsUAihBANwfSchPV%7EVw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA">
+            WEB-analytics and performance evaluation of internet marketing
+          </a>
         </p>
       </div>
     </article>
