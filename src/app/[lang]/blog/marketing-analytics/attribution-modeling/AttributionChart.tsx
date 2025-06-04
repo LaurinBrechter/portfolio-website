@@ -10,20 +10,20 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
+} from "@/src/components/ui/card"
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart"
+} from "@/src/components/ui/chart"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/src/components/ui/select";
 import { useState } from "react"
 
 export const description = "A bar chart with an active bar"
@@ -135,7 +135,7 @@ export function  AttributionChart() {
               tickLine={false}
               tickMargin={10}
               axisLine={false}
-              tickFormatter={(value) =>
+              tickFormatter={(value: string) =>
                 chartConfig[value as keyof typeof chartConfig]?.label
               }
             />
@@ -149,7 +149,7 @@ export function  AttributionChart() {
               tickMargin={10}
               axisLine={false}
               domain={[0, 1]}
-              tickFormatter={(value) => `${(value * 100).toFixed(0)}%`}
+              tickFormatter={(value: number) => `${(value * 100).toFixed(0)}%`}
             />
             <Bar
               dataKey="attribution"

@@ -1,16 +1,17 @@
+// @ts-nocheck
 "use client";
 
-import cytoscape, { Core } from 'cytoscape';
+import { Core } from "cytoscape";
 import CytoscapeComponent from "react-cytoscapejs";
 import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/components/ui/resizable";
+} from "@/src/components/ui/resizable";
 import { useEffect, useRef, useState } from "react";
 import { BlogEntry } from "./Blog";
-import { Input } from "@/components/ui/input";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { Input } from "@/src/components/ui/input";
+import { ScrollArea } from "@/src/components/ui/scroll-area";
 
 type Blog = {
   title: string;
@@ -26,17 +27,22 @@ type Edge = {
     source: string;
     target: string;
   };
-}
+};
 
 type Node = {
   data: {
     id: string;
     label: string;
     href: string;
+    tags: string[];
   };
-}
+};
 
-export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; blogData: Blog[] }) => {
+export const ContentGraph = (props: {
+  graphNodes: Node[];
+  graphEdges: Edge[];
+  blogData: Blog[];
+}) => {
   // const [blog, setBlog] = useState<Blog>(props.blogData[0]);
   // const [blogId, setBlogId] = useState<number>(0);
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -46,13 +52,18 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
   const filteredBlogs = props.blogData.filter(
     (blog) =>
       blog.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      blog.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
-      // blog.description.toLowerCase().includes(searchQuery.toLowerCase()
+      blog.tags.some((tag) =>
+        tag.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    // blog.description.toLowerCase().includes(searchQuery.toLowerCase()
   );
 
   const filteredGraphNodes = props.graphNodes.filter(
     (node) =>
-      node.data.label.toLowerCase().includes(searchQuery.toLowerCase())
+      node.data.label.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      node.data.tags.some((tag) =>
+        tag.toLowerCase().includes(searchQuery.toLowerCase())
+      )
   );
 
   const filteredGraphNodesIds = filteredGraphNodes.map((node) => node.data.id);
@@ -61,28 +72,30 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
     (edge) =>
       filteredGraphNodesIds.includes(edge.data.source) &&
       filteredGraphNodesIds.includes(edge.data.target)
-  )
+  );
 
-  const graphData: (Node | Edge)[] = [...filteredGraphNodes, ...filteredGraphEdges];
+  const graphData: (Node | Edge)[] = [
+    ...filteredGraphNodes,
+    ...filteredGraphEdges,
+  ];
 
   useEffect(() => {
     if (cyRef.current) {
-      const layout = cyRef.current.layout({ name: 'grid' });
+      const layout = cyRef.current.layout({ name: "circle", animate: true });
       layout.run();
     }
   }, [graphData]);
-
 
   return (
     <ResizablePanelGroup
       direction="horizontal"
       className="h-full w-full border-t"
     >
-      <ResizablePanel defaultSize={50}>
+      <ResizablePanel defaultSize={70}>
         <CytoscapeComponent
           elements={graphData}
           style={{ width: "100%", height: "100%" }}
-          layout={{ name: "grid" }}
+          layout={{ name: "circle", animate: true }}
           stylesheet={[
             {
               selector: "node",
@@ -136,20 +149,16 @@ export const ContentGraph = (props: { graphNodes: Node[]; graphEdges: Edge[]; bl
         />
       </ResizablePanel>
       <ResizableHandle withHandle />
-      <ResizablePanel className="p-4 flex flex-col">
+      <ResizablePanel className="p-4 flex flex-col" defaultSize={30}>
         <div className="flex gap-4 pr-4 pb-4">
           <Input
             placeholder="Search Blogs"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-          {/* <Button>Search</Button>
-          <Link href={"/blog/overview"}>
-            <Button>Graph</Button>
-          </Link> */}
         </div>
         <ScrollArea className="pr-4">
-          <div className="h-1/2 flex flex-col gap-3">
+          <div className="flex flex-col gap-3">
             {filteredBlogs.map((blog) => {
               return (
                 <BlogEntry

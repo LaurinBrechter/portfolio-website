@@ -3,84 +3,142 @@
     "data": {
       "id": "0",
       "label": "The Interactive Guide to Attribution Modeling",
-      "href": "/blog/marketing-analytics/attribution-modeling"
+      "href": "/blog/marketing-analytics/attribution-modeling",
+      "tags": ["marketing analytics"]
     }
   },
   {
     "data": {
       "id": "1",
       "label": "Intelligent Chatbots at OMD",
-      "href": "/blog/chatbots/omd-bot"
+      "href": "/blog/chatbots/omd-bot",
+      "tags": ["nlp", "chatbots"]
     }
   },
   {
     "data": {
       "id": "2",
-      "label": "Market Basket Analysis Using High Utility Itemset Mining",
-      "href": "https://towardsdatascience.com/market-basket-analysis-using-high-utility-itemset-mining-df233b297c0d?source=rss-4a7fc9f4bfd4------2"
+      "label": "Self-Service ML with Relational Deep Learning",
+      "href": "https://towardsdatascience.com/self-service-ml-with-relational-deep-learning-beb693a21d5b?source=rss-4a7fc9f4bfd4------2",
+      "tags": [
+        "machine-learning",
+        "deep-learning",
+        "artificial-intelligence",
+        "relational-databases",
+        "data-science"
+      ]
     }
   },
   {
     "data": {
       "id": "3",
-      "label": "An Introduction to Bayesian A/B Testing",
-      "href": "https://towardsdatascience.com/an-introduction-to-bayesian-a-b-testing-37bb62b0f871?source=rss-4a7fc9f4bfd4------2"
+      "label": "Market Basket Analysis Using High Utility Itemset Mining",
+      "href": "https://towardsdatascience.com/market-basket-analysis-using-high-utility-itemset-mining-df233b297c0d?source=rss-4a7fc9f4bfd4------2",
+      "tags": [
+        "marketing",
+        "market-basket-analysis",
+        "data-mining",
+        "artificial-intelligence",
+        "machine-learning"
+      ]
     }
   },
   {
     "data": {
       "id": "4",
-      "label": "Useful Visualizations and Statistics for Marketing Analytics",
-      "href": "https://medium.com/@brechterlaurin/useful-visualizations-and-statistics-for-marketing-analytics-58980a9c6d06?source=rss-4a7fc9f4bfd4------2"
+      "label": "An Introduction to Bayesian A/B Testing",
+      "href": "https://towardsdatascience.com/an-introduction-to-bayesian-a-b-testing-37bb62b0f871?source=rss-4a7fc9f4bfd4------2",
+      "tags": [
+        "statistics",
+        "marketing-analytics",
+        "a-b-testing",
+        "bayesian-statistics",
+        "machine-learning"
+      ]
     }
   },
   {
     "data": {
       "id": "5",
-      "label": "How to use PostgresDB as your One-Stop RAG Solution",
-      "href": "https://medium.com/@brechterlaurin/how-to-use-postgresdb-as-your-one-stop-rag-solution-8536ef7d762e?source=rss-4a7fc9f4bfd4------2"
+      "label": "Useful Visualizations and Statistics for Marketing Analytics",
+      "href": "https://medium.com/@brechterlaurin/useful-visualizations-and-statistics-for-marketing-analytics-58980a9c6d06?source=rss-4a7fc9f4bfd4------2",
+      "tags": [
+        "marketing-analytics",
+        "python",
+        "visualization",
+        "data-analytics",
+        "matplotlib"
+      ]
     }
   },
   {
     "data": {
       "id": "6",
-      "label": "Putting Bayesian Models into Production",
-      "href": "https://medium.com/@brechterlaurin/putting-bayesian-models-into-production-1efae307a138?source=rss-4a7fc9f4bfd4------2"
+      "label": "How to use PostgresDB as your One-Stop RAG Solution",
+      "href": "https://medium.com/@brechterlaurin/how-to-use-postgresdb-as-your-one-stop-rag-solution-8536ef7d762e?source=rss-4a7fc9f4bfd4------2",
+      "tags": ["postgres", "llm", "vector-database", "ai", "chatgpt"]
     }
   },
   {
     "data": {
       "id": "7",
-      "label": "Customer Analytics: Pattern Mining on Clickstream Data in Python",
-      "href": "https://medium.com/@brechterlaurin/customer-analytics-pattern-mining-on-clickstream-data-in-python-1bcd2de15a5d?source=rss-4a7fc9f4bfd4------2"
+      "label": "Putting Bayesian Models into Production",
+      "href": "https://medium.com/@brechterlaurin/putting-bayesian-models-into-production-1efae307a138?source=rss-4a7fc9f4bfd4------2",
+      "tags": ["machine-learning", "bayesian-statistics", "data-science"]
     }
   },
   {
     "data": {
       "id": "8",
-      "label": "A Data-driven, Bayesian Approach to the Critical Path Method",
-      "href": "https://medium.com/@brechterlaurin/a-data-driven-bayesian-approach-to-the-critical-path-method-26fd7905e85b?source=rss-4a7fc9f4bfd4------2"
+      "label": "Customer Analytics: Pattern Mining on Clickstream Data in Python",
+      "href": "https://medium.com/@brechterlaurin/customer-analytics-pattern-mining-on-clickstream-data-in-python-1bcd2de15a5d?source=rss-4a7fc9f4bfd4------2",
+      "tags": [
+        "data-science",
+        "artificial-intelligence",
+        "frequent-pattern-mining",
+        "data-mining",
+        "marketing-analytics"
+      ]
     }
   },
   {
     "data": {
       "id": "9",
-      "label": "Applying the Bayesian Gamma-gamma Model for Customer Lifetime Valuation",
-      "href": "https://medium.com/@brechterlaurin/applying-the-bayesian-gamma-gamma-model-for-customer-lifetime-valuation-aee88e7d2bbb?source=rss-4a7fc9f4bfd4------2"
+      "label": "A Data-driven, Bayesian Approach to the Critical Path Method",
+      "href": "https://medium.com/@brechterlaurin/a-data-driven-bayesian-approach-to-the-critical-path-method-26fd7905e85b?source=rss-4a7fc9f4bfd4------2",
+      "tags": [
+        "data-science",
+        "operations-research",
+        "bayesian-statistics",
+        "project-management"
+      ]
     }
   },
   {
     "data": {
       "id": "10",
-      "label": "Material Flow Simulation and Optimization with SimPy",
-      "href": "https://python.plainenglish.io/material-flow-simulation-and-optimization-with-simpy-8c3abf48cc21?source=rss-4a7fc9f4bfd4------2"
+      "label": "Applying the Bayesian Gamma-gamma Model for Customer Lifetime Valuation",
+      "href": "https://medium.com/@brechterlaurin/applying-the-bayesian-gamma-gamma-model-for-customer-lifetime-valuation-aee88e7d2bbb?source=rss-4a7fc9f4bfd4------2",
+      "tags": [
+        "machine-learning",
+        "bayesian-statistics",
+        "data-science",
+        "marketing-analytics"
+      ]
     }
   },
   {
     "data": {
       "id": "11",
-      "label": "A Bayesian Approach to Customer Lifetime Valuation",
-      "href": "https://medium.com/@brechterlaurin/a-bayesian-approach-to-customer-lifetime-valuation-cd0cde6ee105?source=rss-4a7fc9f4bfd4------2"
+      "label": "Material Flow Simulation and Optimization with SimPy",
+      "href": "https://python.plainenglish.io/material-flow-simulation-and-optimization-with-simpy-8c3abf48cc21?source=rss-4a7fc9f4bfd4------2",
+      "tags": [
+        "data-science",
+        "machine-learning",
+        "simulation",
+        "python",
+        "operations-research"
+      ]
     }
   }
 ]

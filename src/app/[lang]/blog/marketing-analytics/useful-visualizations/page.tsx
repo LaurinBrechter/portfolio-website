@@ -13,9 +13,14 @@ export async function generateMetadata({
   params: { lang: string };
 }): Promise<Metadata> {
   return {
-    title: "Useful Visualiations for Marketing Analytics",
-    description:
-      "In this article, I have compiled a list of useful visualizations and statistics for marketing analytics. These visualizations can help you understand your data better and make better decisions.",
+    title: "Marketing Analytics Visualizations: Essential Charts & Dashboards Guide",
+    description: "Discover key marketing analytics visualizations including funnel charts, Sankey diagrams, Pareto analysis, and customer journey mapping. Learn how to leverage these powerful charts for better marketing decisions and customer insights.",
+    keywords: "marketing analytics, data visualization, funnel charts, Sankey diagrams, customer journey mapping, Pareto analysis, marketing metrics, customer segmentation",
+    openGraph: {
+      title: "Marketing Analytics Visualizations: Essential Charts & Dashboards Guide",
+      description: "Discover key marketing analytics visualizations including funnel charts, Sankey diagrams, Pareto analysis, and customer journey mapping.",
+      type: "article",
+    },
   };
 }
 

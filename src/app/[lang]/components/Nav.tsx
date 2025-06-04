@@ -1,26 +1,31 @@
 "use client";
 
 import React from "react";
+import { Link, usePathname, useRouter } from "@/src/i18n/routing";
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Link, usePathname } from "@/src/i18n/routing";
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { Button } from "@/src/components/ui/button";
+import { ChevronDownIcon, GlobeIcon } from "lucide-react";
+import Lang from "@/src/lang/lang";
 
-const Nav = () => {
+const Nav = ({ locale }: { locale: string }) => {
+  const localTranslations = Lang[locale];
+
+  console.log(locale)
+
   const routes = [
     // { name: 'About', path: '/about' },
-    { name: "Blog", path: "/blog" },
-    // { name: "Portfolio", path: "/portfolio" },
-    // { name: "Blog", path: "/blog" },
-    { name: "Testimonials", path: "/testimonials" },
-    // { name: 'Services', path: '/services' },
+    { name: localTranslations.home.nav.blog, path: "/blog" },
+    { name: localTranslations.home.nav.projects, path: "/projects" },
+    { name: localTranslations.home.nav.testimonials, path: "/testimonials" },
   ];
 
   const pathname = usePathname();
+
+  const router = useRouter();
 
   return (
     <header className="px-4 lg:px-6 h-[7vh] flex items-center sticky top-0 bg-white z-10">
@@ -33,37 +38,41 @@ const Nav = () => {
             <Link
               href={route.path}
               key={route.name}
-              className={`text-sm font-medium hover:underline underline-offset-4}`}
+              className={`text-sm font-medium hover:underline decoration-2 underline-offset-2`}
             >
               {route.name}
             </Link>
           );
         })}
-        {/* <Select name='locale'>
-        <SelectTrigger>
-          <SelectValue placeholder="English" />
-        </SelectTrigger>
-        <SelectContent>
-        <Link locale='de' href={'/blog'}><SelectItem value="de">de</SelectItem></Link>
-            <SelectItem value="en"><Link locale='en' href={'/'}>en</Link></SelectItem>
-        </SelectContent>
-        </Select> */}
-        <div className="flex items-center pl-2 flex-col">
-          <Link
-            locale="de"
-            href={pathname}
-            className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-          >
-            de
-          </Link>
-          <Link
-            locale="en"
-            href={pathname}
-            className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-          >
-            en
-          </Link>
-        </div>
+        <Popover>
+          <PopoverTrigger asChild>
+            <Button variant="outline" className="flex items-center gap-2 p-2 py-1 h-8">
+              <GlobeIcon className="h-4 w-4" />
+              {/* <span>🌐</span> */}
+              <ChevronDownIcon className="h-4 w-4" />
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent className="p-0 flex flex-col">
+            <Button
+              variant="ghost"
+              className="justify-start"
+              onClick={() => {
+                router.push(pathname, { locale: "de", scroll: false });
+              }}
+            >
+              🇩🇪
+            </Button>
+            <Button
+              variant="ghost"
+              className="justify-start"
+              onClick={() => {
+                router.push(pathname, { locale: "en", scroll: false });
+              }}
+            >
+              🇬🇧
+            </Button>
+          </PopoverContent>
+        </Popover>
       </nav>
     </header>
   );

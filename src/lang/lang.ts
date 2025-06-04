@@ -3,6 +3,10 @@ export type LangTranslations = {
 
     [key: string]: {
   
+      projects: {
+        title: string;
+      },
+      
       home: {
   
         title: string;
@@ -10,6 +14,11 @@ export type LangTranslations = {
         subtitle: string;
         learn_more: string;
         
+        nav: {
+            blog: string;
+            projects: string;
+            testimonials: string;
+        },
         services: {
           title: string;
           learn_more: string;
@@ -23,6 +32,7 @@ export type LangTranslations = {
           title: string;
           content: string;
         },
+        
         caseStudies: {
           title: string;
           omd_appointbot: {
@@ -62,12 +72,19 @@ export type LangTranslations = {
 
 const Lang: LangTranslations = {
     en: {
+        projects: {
+            title: 'My Projects',
+        },
         home: {
             title: 'Unlock the Power of Your Data',
             subtitle: 'Expert data analysis and scientific insights to drive your business forward. Transform raw data into actionable strategies.',
             learn_more: 'Learn More',
-            
-           
+            nav: {
+                blog: 'Blog',
+                projects: 'Projects',
+                testimonials: 'Testimonials',
+            },
+          
             
             services: {
               title: 'Our Services',
@@ -106,10 +123,10 @@ const Lang: LangTranslations = {
                 benefit: '5 distinct customer segments identified'
               },
               federated_bank_parsing: {
-                title: 'Föderiertes Lernen für Banken',
-                subtitle: 'Datenschutzfreundliche KI für sichere Kontoauszugsanalyse',
-                description: 'Entwickelte ein föderiertes Lernmodell, um Banken zu ermöglichen, Daten sicher zu analysieren, ohne sensible Kundeninformationen offenzulegen.',
-                benefit: 'precsise parsing of bank statements'
+                title: 'Federated Learning for Banks',
+                subtitle: 'Privacy-friendly AI for secure bank statement analysis',
+                description: 'Developed a federated learning model to enable banks to analyze data securely without exposing sensitive customer information.',
+                benefit: 'Precise parsing of bank statements'
               },
               link: 'Learn More'
             },
@@ -123,10 +140,19 @@ const Lang: LangTranslations = {
         }
     },
     de: {
+        projects: {
+            title: 'Meine Projekte',
+        },
         home: {
             title: 'Entfesseln Sie die Kraft Ihrer Daten',
             subtitle: 'Experten für Datenanalyse und wissenschaftliche Erkenntnisse, um Ihr Unternehmen voranzubringen. Verwandeln Sie Rohdaten in handlungsorientierte Strategien.',
             learn_more: 'Erfahren Sie mehr',
+            nav: {
+                blog: 'Blog',
+                projects: 'Projekte',
+                testimonials: 'Testimonials',
+            },
+
             
             services: {
               title: 'Unsere Dienstleistungen',
