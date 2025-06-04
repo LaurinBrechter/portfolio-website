@@ -2,11 +2,10 @@ import { Metadata } from "next";
 import Image from "next/image";
 import HighlightedImageMap from "./interactiveImageSVG";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { lang: string };
+export async function generateMetadata(props: {
+  params: Promise<{ lang: string }>;
 }): Promise<Metadata> {
+  const params = await props.params;
   if (params.lang === "en") {
     return {
       title: "Federated Bank Statement Parsing",
@@ -29,7 +28,7 @@ export default function Page() {
         <h1 className="text-left w-full">
           Federated Learning for Bank Statement Parsing
         </h1>
-        <p>
+        <p className="mb-4">
           As the prevalence of Machine Learning (ML) systems in our day-to-day
           products rises, so does the need for ensuring data privacy. There is
           some data that we may not feel comfortable sending to an external

@@ -17,19 +17,12 @@ export default function ProjectsPage({ params }: { params: { lang: string } }) {
 
   const projects = [
     {
-      title: "Tab Transcribe",
+      title: "taalmaster",
       description:
-        "A chrome extension that uses openai whisper to transcribe the audio from any tab. The extension runs fully client side without any third party services.",
+        "A language learning app that focusses on comprehensible input such as YouTube vidoes, books and podcasts.",
       image: "/placeholder.svg?height=200&width=400",
-      tags: ["Typescript", "OpenAI", "Whisper", "Chrome Extension"],
-      githubLink: "https://github.com/LaurinBrechter/tab-transcribe",
-    },
-    {
-      title: "pamidb",
-      description: "A specialized database written in rust for pattern mining.",
-      image: "/placeholder.svg?height=200&width=400",
-      tags: ["Rust", "Pattern Mining", "Database"],
-      githubLink: "https://github.com/LaurinBrechter/pamidb",
+      tags: ["React", "Postgres", "Docker", "NextJS", "TailwindCSS", "Posthog"],
+      liveLink: "https://taalmaster.com",
     },
     {
       title: "Immoscan",
@@ -38,6 +31,21 @@ export default function ProjectsPage({ params }: { params: { lang: string } }) {
       image: "/placeholder.svg?height=200&width=400",
       tags: ["NextJS", "TailwindCSS", "Typescript", "React"],
       liveLink: "https://immoscan.vercel.app/",
+    },
+    {
+      title: "next-cache-graph",
+      description: "Visualize cache dependencies in NextJS projects.",
+      image: "/placeholder.svg?height=200&width=400",
+      tags: ["NextJS", "NodeJS"],
+      githubLink: "https://github.com/LaurinBrechter/next-cache-graph",
+    },
+    {
+      title: "Tab Transcribe",
+      description:
+        "A chrome extension that uses openai whisper to transcribe the audio from any tab. The extension runs fully client side without any third party services.",
+      image: "/placeholder.svg?height=200&width=400",
+      tags: ["Typescript", "OpenAI", "Whisper", "Chrome Extension"],
+      githubLink: "https://github.com/LaurinBrechter/tab-transcribe",
     },
   ];
 

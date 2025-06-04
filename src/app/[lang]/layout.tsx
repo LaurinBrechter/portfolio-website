@@ -25,22 +25,23 @@ export const metadata: Metadata = {
 //   return routing.locales.map((locale) => ({locale}));
 // }
 
-export default async function LocaleLayout({
-  children,
-  params: { lang },
-}: {
+export default async function LocaleLayout(props: {
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
+  const params = await props.params;
+
+  const { lang } = params;
+
+  const { children } = props;
+
   // unstable_setRequestLocale(locale);
 
   const messages = await getMessages();
 
-  console.log(lang)
-
   return (
     <html lang={lang}>
-      <body className={inter.className} >
+      <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           <Nav locale={lang} />
           <main className="h-[93vh] overflow-y-auto scroll-smooth">

@@ -14,13 +14,13 @@ import Lang from "@/src/lang/lang";
 const Nav = ({ locale }: { locale: string }) => {
   const localTranslations = Lang[locale];
 
-  console.log(locale)
+  console.log(locale);
 
   const routes = [
     // { name: 'About', path: '/about' },
     { name: localTranslations.home.nav.blog, path: "/blog" },
     { name: localTranslations.home.nav.projects, path: "/projects" },
-    { name: localTranslations.home.nav.testimonials, path: "/testimonials" },
+    // { name: localTranslations.home.nav.testimonials, path: "/testimonials" },
   ];
 
   const pathname = usePathname();
@@ -46,7 +46,10 @@ const Nav = ({ locale }: { locale: string }) => {
         })}
         <Popover>
           <PopoverTrigger asChild>
-            <Button variant="outline" className="flex items-center gap-2 p-2 py-1 h-8">
+            <Button
+              variant="outline"
+              className="flex items-center gap-2 p-2 py-1 h-8"
+            >
               <GlobeIcon className="h-4 w-4" />
               {/* <span>🌐</span> */}
               <ChevronDownIcon className="h-4 w-4" />

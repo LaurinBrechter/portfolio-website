@@ -2,27 +2,17 @@ import { Button } from "@/src/components/ui/button";
 
 // https://www.realtimecolors.com/?colors=14181f-eef1f6-223b68-7da2e3-1a5dd1&fonts=Inter-Inter
 
-import {
-  BarChart,
-  PieChart,
-  LineChart,
-  Database,
-  Bot,
-  ExternalLink,
-  TrendingUp,
-  Users,
-  DollarSign,
-  Github,
-  Linkedin,
-  FileText,
-} from "lucide-react";
+import { BarChart, LineChart, Bot, Github, Linkedin } from "lucide-react";
 import Lang from "@/src/lang/lang";
-import { Link } from "@/src/i18n/routing";
 import CalendlyInline from "./components/CalendlyInline";
 import { CaseStudies } from "./components/CaseStudies";
 import Image from "next/image";
 
-export default function Home({ params }: { params: { lang: string } }) {
+export default async function Home(props: {
+  params: Promise<{ lang: string }>;
+}) {
+  const params = await props.params;
+  // unstable_setRequestLocale(params.lang);
 
   const locale = params.lang ? params.lang : "en";
   const localTranslations = Lang[locale];
@@ -32,7 +22,6 @@ export default function Home({ params }: { params: { lang: string } }) {
     <LineChart className="h-12 w-12 mb-4 text-primary" />,
     <Bot className="h-12 w-12 mb-4 text-primary" />,
   ];
-
 
   return (
     <>

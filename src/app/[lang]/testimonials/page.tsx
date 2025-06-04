@@ -52,7 +52,8 @@ function Testimonial({ image, name, company, title, testimonial, relatedPosts }:
 }
 
 
-export default function TestimonialsSection({ params }: { params: { lang: string } }) {
+export default async function TestimonialsSection(props: { params: Promise<{ lang: string }> }) {
+  const params = await props.params;
 
   const locale = params.lang ? params.lang : 'en'
   const localTranslations = Lang[locale]

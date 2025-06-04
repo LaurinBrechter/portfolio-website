@@ -53,12 +53,9 @@ export function CaseStudies(props: {
                       .description
                   }
                 </p>
-                <Link
-                  href={"/blog/chatbots/omd-bot"}
-                  className="hover:underline underline-offset-4"
-                >
+                <p className="hover:underline underline-offset-4">
                   {localTranslations.home.caseStudies.link}
-                </Link>
+                </p>
               </CardContent>
             </Card>
           </Link>
@@ -98,12 +95,9 @@ export function CaseStudies(props: {
                       .description
                   }
                 </p>
-                <Link
-                  href={"/blog/marketing-analytics/rfm-analysis"}
-                  className="hover:underline underline-offset-4"
-                >
+                <p className="hover:underline underline-offset-4">
                   {localTranslations.home.caseStudies.link}
-                </Link>
+                </p>
               </CardContent>
             </Card>
           </Link>
@@ -139,12 +133,9 @@ export function CaseStudies(props: {
                       .description
                   }
                 </p>
-                <Link
-                  href={"/blog/federated-bank-statement-parsing"}
-                  className="hover:underline underline-offset-4"
-                >
+                <p className="hover:underline underline-offset-4">
                   {localTranslations.home.caseStudies.link}
-                </Link>
+                </p>
               </CardContent>
             </Card>
           </Link>
