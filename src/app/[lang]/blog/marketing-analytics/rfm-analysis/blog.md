@@ -11,4 +11,3 @@ RFM Analysis is a marketing technique used to evaluate and segment customers bas
 By analyzing these three dimensions, you can prioritize customer engagement strategies and develop personalized marketing campaigns that target the most valuable segments.
 
 Together with the people at [Meisterlampe & Freunde](https://www.meisterlampe-und-freunde.de/) we used RFM analysis to segment a client's user base to better target them with personalized offers.
-
